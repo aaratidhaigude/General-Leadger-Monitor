@@ -1,0 +1,3156 @@
+[
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='200000000',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='200000000',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "200000000",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "530000",
+    "DocumentType": "SA",
+    "PostingDate": "2026-08-26",
+    "PostingTime": "PT10H55M54S",
+    "AmountINR": "10000.000",
+    "UTRReference": "RENT PAID",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='200000000',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='200000000',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "200000000",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "190000",
+    "DocumentType": "SA",
+    "PostingDate": "2026-08-26",
+    "PostingTime": "PT10H55M54S",
+    "AmountINR": "10000.000",
+    "UTRReference": "RENT PAID",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='200000001',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='200000001',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "200000001",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "190000",
+    "DocumentType": "SA",
+    "PostingDate": "2026-09-10",
+    "PostingTime": "PT15H30M03S",
+    "AmountINR": "21800.000",
+    "UTRReference": "HDFC0HDFC126001",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='200000001',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='200000001',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "200000001",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "190020",
+    "DocumentType": "SA",
+    "PostingDate": "2026-09-10",
+    "PostingTime": "PT15H30M03S",
+    "AmountINR": "21800.000",
+    "UTRReference": "HDFC0HDFC126001",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='200000002',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='200000002',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "200000002",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "190000",
+    "DocumentType": "SA",
+    "PostingDate": "2026-09-10",
+    "PostingTime": "PT15H30M36S",
+    "AmountINR": "195120.000",
+    "UTRReference": "HDFC0HDFC126001",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='200000002',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='200000002',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "200000002",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "190010",
+    "DocumentType": "SA",
+    "PostingDate": "2026-09-10",
+    "PostingTime": "PT15H30M36S",
+    "AmountINR": "195120.000",
+    "UTRReference": "HDFC0HDFC126001",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='200000003',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='200000003',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "200000003",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "530000",
+    "DocumentType": "SA",
+    "PostingDate": "2026-09-21",
+    "PostingTime": "PT10H44M04S",
+    "AmountINR": "100.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='200000003',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='200000003',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "200000003",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "190000",
+    "DocumentType": "SA",
+    "PostingDate": "2026-09-21",
+    "PostingTime": "PT10H44M04S",
+    "AmountINR": "100.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1400000000',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1400000000',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1400000000",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "190020",
+    "DocumentType": "DZ",
+    "PostingDate": "2026-09-10",
+    "PostingTime": "PT15H16M02S",
+    "AmountINR": "21800.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1400000000',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1400000000',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1400000000",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "140000",
+    "DocumentType": "DZ",
+    "PostingDate": "2026-09-10",
+    "PostingTime": "PT15H16M02S",
+    "AmountINR": "21800.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1400000001',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1400000001',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1400000001",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "190000",
+    "DocumentType": "DZ",
+    "PostingDate": "2026-09-21",
+    "PostingTime": "PT11H03M40S",
+    "AmountINR": "1000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1400000001',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1400000001',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1400000001",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "140000",
+    "DocumentType": "DZ",
+    "PostingDate": "2026-09-21",
+    "PostingTime": "PT11H03M40S",
+    "AmountINR": "1000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1500000000',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1500000000',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1500000000",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "190010",
+    "DocumentType": "KZ",
+    "PostingDate": "2026-09-10",
+    "PostingTime": "PT15H14M44S",
+    "AmountINR": "195120.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1500000000',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1500000000',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1500000000",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "150000",
+    "DocumentType": "KZ",
+    "PostingDate": "2026-09-10",
+    "PostingTime": "PT15H14M44S",
+    "AmountINR": "99900.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1500000000',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1500000000',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1500000000",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "150000",
+    "DocumentType": "KZ",
+    "PostingDate": "2026-09-10",
+    "PostingTime": "PT15H14M44S",
+    "AmountINR": "95220.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1500000001',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1500000001',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1500000001",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "190000",
+    "DocumentType": "KZ",
+    "PostingDate": "2026-09-21",
+    "PostingTime": "PT10H58M27S",
+    "AmountINR": "1009.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1500000001',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1500000001',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1500000001",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "150000",
+    "DocumentType": "KZ",
+    "PostingDate": "2026-09-21",
+    "PostingTime": "PT10H58M27S",
+    "AmountINR": "1009.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000000',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000000',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1800000000",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "140000",
+    "DocumentType": "DR",
+    "PostingDate": "2026-09-01",
+    "PostingTime": "PT17H09M12S",
+    "AmountINR": "11800.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000000',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000000',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1800000000",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "400000",
+    "DocumentType": "DR",
+    "PostingDate": "2026-09-01",
+    "PostingTime": "PT17H09M12S",
+    "AmountINR": "10000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000000',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000000',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1800000000",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "170000",
+    "DocumentType": "DR",
+    "PostingDate": "2026-09-01",
+    "PostingTime": "PT17H09M12S",
+    "AmountINR": "900.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000000',FiscalYear='2026',LineItem='004')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000000',FiscalYear='2026',LineItem='004')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1800000000",
+    "FiscalYear": "2026",
+    "LineItem": "004",
+    "GLAccount": "170010",
+    "DocumentType": "DR",
+    "PostingDate": "2026-09-01",
+    "PostingTime": "PT17H09M12S",
+    "AmountINR": "900.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000001',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000001',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1800000001",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "140000",
+    "DocumentType": "DR",
+    "PostingDate": "2026-09-10",
+    "PostingTime": "PT14H57M40S",
+    "AmountINR": "10000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000001',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000001',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1800000001",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "400000",
+    "DocumentType": "DR",
+    "PostingDate": "2026-09-10",
+    "PostingTime": "PT14H57M40S",
+    "AmountINR": "10000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000002',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000002',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1800000002",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "140000",
+    "DocumentType": "DR",
+    "PostingDate": "2026-09-21",
+    "PostingTime": "PT10H38M54S",
+    "AmountINR": "2000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000002',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000002',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1800000002",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "400000",
+    "DocumentType": "DR",
+    "PostingDate": "2026-09-21",
+    "PostingTime": "PT10H38M54S",
+    "AmountINR": "2000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000004',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000004',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1800000004",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "140000",
+    "DocumentType": "DR",
+    "PostingDate": "2026-09-21",
+    "PostingTime": "PT11H02M22S",
+    "AmountINR": "1000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000004',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1800000004',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1800000004",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "400000",
+    "DocumentType": "DR",
+    "PostingDate": "2026-09-21",
+    "PostingTime": "PT11H02M22S",
+    "AmountINR": "1000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000000',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000000',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000000",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-08-27",
+    "PostingTime": "PT10H04M57S",
+    "AmountINR": "10000.000",
+    "UTRReference": "1",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000000',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000000',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000000",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-08-27",
+    "PostingTime": "PT10H04M57S",
+    "AmountINR": "10000.000",
+    "UTRReference": "1",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000002',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000002',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000002",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-01",
+    "PostingTime": "PT12H28M23S",
+    "AmountINR": "2000000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000002',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000002',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000002",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-01",
+    "PostingTime": "PT12H28M23S",
+    "AmountINR": "2000000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000003',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000003',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000003",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-01",
+    "PostingTime": "PT14H20M32S",
+    "AmountINR": "3099900.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000003',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000003',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000003",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-01",
+    "PostingTime": "PT14H20M32S",
+    "AmountINR": "3100000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000003',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000003',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000003",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-01",
+    "PostingTime": "PT14H20M32S",
+    "AmountINR": "100.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000004',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000004',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000004",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT10H26M01S",
+    "AmountINR": "11790.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000004',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000004',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000004",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT10H26M01S",
+    "AmountINR": "10000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000004',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000004',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000004",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "160000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT10H26M01S",
+    "AmountINR": "900.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000004',FiscalYear='2026',LineItem='004')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000004',FiscalYear='2026',LineItem='004')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000004",
+    "FiscalYear": "2026",
+    "LineItem": "004",
+    "GLAccount": "160010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT10H26M01S",
+    "AmountINR": "900.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000004',FiscalYear='2026',LineItem='005')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000004',FiscalYear='2026',LineItem='005')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000004",
+    "FiscalYear": "2026",
+    "LineItem": "005",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT10H26M01S",
+    "AmountINR": "10.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000005',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000005',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000005",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H28M53S",
+    "AmountINR": "11180.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000005',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000005',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000005",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H28M53S",
+    "AmountINR": "9474.580",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000005',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000005',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000005",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "160000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H28M53S",
+    "AmountINR": "852.710",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000005',FiscalYear='2026',LineItem='004')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000005',FiscalYear='2026',LineItem='004')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000005",
+    "FiscalYear": "2026",
+    "LineItem": "004",
+    "GLAccount": "160010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H28M53S",
+    "AmountINR": "852.710",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000006',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000006',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000006",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H30M19S",
+    "AmountINR": "24975.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000006',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000006',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000006",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H30M19S",
+    "AmountINR": "25000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000006',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000006',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000006",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H30M19S",
+    "AmountINR": "25.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000007',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000007',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000007",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H31M32S",
+    "AmountINR": "35469.910",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000007',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000007',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000007",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H31M32S",
+    "AmountINR": "30084.740",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000007',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000007',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000007",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "160000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H31M32S",
+    "AmountINR": "2707.630",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000007',FiscalYear='2026',LineItem='004')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000007',FiscalYear='2026',LineItem='004')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000007",
+    "FiscalYear": "2026",
+    "LineItem": "004",
+    "GLAccount": "160010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H31M32S",
+    "AmountINR": "2707.630",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000007',FiscalYear='2026',LineItem='005')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000007',FiscalYear='2026',LineItem='005')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000007",
+    "FiscalYear": "2026",
+    "LineItem": "005",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H31M32S",
+    "AmountINR": "30.090",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000008',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000008',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000008",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H32M34S",
+    "AmountINR": "49000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000008',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000008',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000008",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H32M34S",
+    "AmountINR": "49000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000009',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000009',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000009",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H34M11S",
+    "AmountINR": "55944.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000009',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000009',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000009",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H34M11S",
+    "AmountINR": "56000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000009',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000009',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000009",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H34M11S",
+    "AmountINR": "56.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000010',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000010',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000010",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H34M57S",
+    "AmountINR": "88911.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000010',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000010',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000010",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H34M57S",
+    "AmountINR": "89000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000010',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000010',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000010",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H34M57S",
+    "AmountINR": "89.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000011',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000011',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000011",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H35M38S",
+    "AmountINR": "100000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000011',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000011',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000011",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H35M38S",
+    "AmountINR": "84745.760",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000011',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000011',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000011",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "160000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H35M38S",
+    "AmountINR": "7627.120",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000011',FiscalYear='2026',LineItem='004')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000011',FiscalYear='2026',LineItem='004')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000011",
+    "FiscalYear": "2026",
+    "LineItem": "004",
+    "GLAccount": "160010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H35M38S",
+    "AmountINR": "7627.120",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000012',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000012',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000012",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H36M45S",
+    "AmountINR": "10491.100",
+    "UTRReference": "TESTING",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000012',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000012',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000012",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H36M45S",
+    "AmountINR": "8898.300",
+    "UTRReference": "TESTING",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000012',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000012',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000012",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "160000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H36M45S",
+    "AmountINR": "800.850",
+    "UTRReference": "TESTING",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000012',FiscalYear='2026',LineItem='004')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000012',FiscalYear='2026',LineItem='004')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000012",
+    "FiscalYear": "2026",
+    "LineItem": "004",
+    "GLAccount": "160010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H36M45S",
+    "AmountINR": "800.850",
+    "UTRReference": "TESTING",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000012',FiscalYear='2026',LineItem='005')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000012',FiscalYear='2026',LineItem='005')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000012",
+    "FiscalYear": "2026",
+    "LineItem": "005",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H36M45S",
+    "AmountINR": "8.900",
+    "UTRReference": "TESTING",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000013',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000013',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000013",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H37M39S",
+    "AmountINR": "100914.410",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000013',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000013',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000013",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H37M39S",
+    "AmountINR": "85593.220",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000013',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000013',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000013",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "160000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H37M39S",
+    "AmountINR": "7703.390",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000013',FiscalYear='2026',LineItem='004')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000013',FiscalYear='2026',LineItem='004')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000013",
+    "FiscalYear": "2026",
+    "LineItem": "004",
+    "GLAccount": "160010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H37M39S",
+    "AmountINR": "7703.390",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000013',FiscalYear='2026',LineItem='005')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000013',FiscalYear='2026',LineItem='005')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000013",
+    "FiscalYear": "2026",
+    "LineItem": "005",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H37M39S",
+    "AmountINR": "85.590",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000014',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000014',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000014",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H38M44S",
+    "AmountINR": "98416.520",
+    "UTRReference": "TESTING",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000014',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000014',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000014",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H38M44S",
+    "AmountINR": "83474.580",
+    "UTRReference": "TESTING",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000014',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000014',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000014",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "160000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H38M44S",
+    "AmountINR": "7512.710",
+    "UTRReference": "TESTING",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000014',FiscalYear='2026',LineItem='004')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000014',FiscalYear='2026',LineItem='004')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000014",
+    "FiscalYear": "2026",
+    "LineItem": "004",
+    "GLAccount": "160010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H38M44S",
+    "AmountINR": "7512.710",
+    "UTRReference": "TESTING",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000014',FiscalYear='2026',LineItem='005')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000014',FiscalYear='2026',LineItem='005')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000014",
+    "FiscalYear": "2026",
+    "LineItem": "005",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-03",
+    "PostingTime": "PT11H38M44S",
+    "AmountINR": "83.480",
+    "UTRReference": "TESTING",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000015",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H20M32S",
+    "AmountINR": "100000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000015",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H20M32S",
+    "AmountINR": "24975.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000015",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H20M32S",
+    "AmountINR": "24975.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='004')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='004')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000015",
+    "FiscalYear": "2026",
+    "LineItem": "004",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H20M32S",
+    "AmountINR": "24975.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='005')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='005')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000015",
+    "FiscalYear": "2026",
+    "LineItem": "005",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H20M32S",
+    "AmountINR": "24975.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='006')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='006')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000015",
+    "FiscalYear": "2026",
+    "LineItem": "006",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H20M32S",
+    "AmountINR": "25.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='007')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='007')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000015",
+    "FiscalYear": "2026",
+    "LineItem": "007",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H20M32S",
+    "AmountINR": "25.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='008')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='008')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000015",
+    "FiscalYear": "2026",
+    "LineItem": "008",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H20M32S",
+    "AmountINR": "25.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='009')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000015',FiscalYear='2026',LineItem='009')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000015",
+    "FiscalYear": "2026",
+    "LineItem": "009",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H20M32S",
+    "AmountINR": "25.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000016",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H23M09S",
+    "AmountINR": "100000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000016",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H23M09S",
+    "AmountINR": "24975.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000016",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H23M09S",
+    "AmountINR": "24975.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='004')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='004')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000016",
+    "FiscalYear": "2026",
+    "LineItem": "004",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H23M09S",
+    "AmountINR": "24975.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='005')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='005')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000016",
+    "FiscalYear": "2026",
+    "LineItem": "005",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H23M09S",
+    "AmountINR": "24975.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='006')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='006')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000016",
+    "FiscalYear": "2026",
+    "LineItem": "006",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H23M09S",
+    "AmountINR": "25.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='007')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='007')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000016",
+    "FiscalYear": "2026",
+    "LineItem": "007",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H23M09S",
+    "AmountINR": "25.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='008')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='008')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000016",
+    "FiscalYear": "2026",
+    "LineItem": "008",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H23M09S",
+    "AmountINR": "25.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='009')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000016',FiscalYear='2026',LineItem='009')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000016",
+    "FiscalYear": "2026",
+    "LineItem": "009",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H23M09S",
+    "AmountINR": "25.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000017",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H26M03S",
+    "AmountINR": "100000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000017",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H26M03S",
+    "AmountINR": "24975.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000017",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H26M03S",
+    "AmountINR": "24975.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='004')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='004')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000017",
+    "FiscalYear": "2026",
+    "LineItem": "004",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H26M03S",
+    "AmountINR": "24975.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='005')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='005')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000017",
+    "FiscalYear": "2026",
+    "LineItem": "005",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H26M03S",
+    "AmountINR": "24975.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='006')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='006')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000017",
+    "FiscalYear": "2026",
+    "LineItem": "006",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H26M03S",
+    "AmountINR": "25.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='007')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='007')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000017",
+    "FiscalYear": "2026",
+    "LineItem": "007",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H26M03S",
+    "AmountINR": "25.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='008')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='008')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000017",
+    "FiscalYear": "2026",
+    "LineItem": "008",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H26M03S",
+    "AmountINR": "25.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='009')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000017',FiscalYear='2026',LineItem='009')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000017",
+    "FiscalYear": "2026",
+    "LineItem": "009",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H26M03S",
+    "AmountINR": "25.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000018",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H35M47S",
+    "AmountINR": "100.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000018",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H35M47S",
+    "AmountINR": "24.980",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000018",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H35M47S",
+    "AmountINR": "24.970",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='004')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='004')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000018",
+    "FiscalYear": "2026",
+    "LineItem": "004",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H35M47S",
+    "AmountINR": "24.980",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='005')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='005')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000018",
+    "FiscalYear": "2026",
+    "LineItem": "005",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H35M47S",
+    "AmountINR": "24.970",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='006')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='006')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000018",
+    "FiscalYear": "2026",
+    "LineItem": "006",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H35M47S",
+    "AmountINR": "0.020",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='007')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='007')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000018",
+    "FiscalYear": "2026",
+    "LineItem": "007",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H35M47S",
+    "AmountINR": "0.030",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='008')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='008')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000018",
+    "FiscalYear": "2026",
+    "LineItem": "008",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H35M47S",
+    "AmountINR": "0.020",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='009')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000018',FiscalYear='2026',LineItem='009')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000018",
+    "FiscalYear": "2026",
+    "LineItem": "009",
+    "GLAccount": "180010",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT16H35M47S",
+    "AmountINR": "0.030",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000019',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000019',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000019",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT17H45M56S",
+    "AmountINR": "1000.000",
+    "UTRReference": "100",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000019',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000019',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000019",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT17H45M56S",
+    "AmountINR": "250.000",
+    "UTRReference": "100",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000019',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000019',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000019",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT17H45M56S",
+    "AmountINR": "250.000",
+    "UTRReference": "100",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000019',FiscalYear='2026',LineItem='004')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000019',FiscalYear='2026',LineItem='004')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000019",
+    "FiscalYear": "2026",
+    "LineItem": "004",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT17H45M56S",
+    "AmountINR": "250.000",
+    "UTRReference": "100",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000019',FiscalYear='2026',LineItem='005')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000019',FiscalYear='2026',LineItem='005')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000019",
+    "FiscalYear": "2026",
+    "LineItem": "005",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT17H45M56S",
+    "AmountINR": "250.000",
+    "UTRReference": "100",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000020',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000020',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000020",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT18H01M35S",
+    "AmountINR": "100000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000020',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000020',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000020",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT18H01M35S",
+    "AmountINR": "25000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000020',FiscalYear='2026',LineItem='003')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000020',FiscalYear='2026',LineItem='003')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000020",
+    "FiscalYear": "2026",
+    "LineItem": "003",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT18H01M35S",
+    "AmountINR": "25000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000020',FiscalYear='2026',LineItem='004')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000020',FiscalYear='2026',LineItem='004')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000020",
+    "FiscalYear": "2026",
+    "LineItem": "004",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT18H01M35S",
+    "AmountINR": "25000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000020',FiscalYear='2026',LineItem='005')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000020',FiscalYear='2026',LineItem='005')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000020",
+    "FiscalYear": "2026",
+    "LineItem": "005",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT18H01M35S",
+    "AmountINR": "25000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000021',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000021',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000021",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-09",
+    "PostingTime": "PT11H56M36S",
+    "AmountINR": "95220.000",
+    "UTRReference": "TEST",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000021',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000021',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000021",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-09",
+    "PostingTime": "PT11H56M36S",
+    "AmountINR": "95220.000",
+    "UTRReference": "TEST",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000022',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000022',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000022",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT21H42M13S",
+    "AmountINR": "100.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000022',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000022',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000022",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT21H42M13S",
+    "AmountINR": "100.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000023',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000023',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000023",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT21H45M33S",
+    "AmountINR": "1000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000023',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000023',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000023",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT21H45M33S",
+    "AmountINR": "1000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000024',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000024',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000024",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT21H48M48S",
+    "AmountINR": "1000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000024',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000024',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000024",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT21H48M48S",
+    "AmountINR": "1000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000025',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000025',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000025",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT22H39M56S",
+    "AmountINR": "1000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000025',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000025',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000025",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT22H39M56S",
+    "AmountINR": "1000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000026',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000026',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000026",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT22H45M08S",
+    "AmountINR": "1000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000026',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000026',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000026",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT22H45M08S",
+    "AmountINR": "1000.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000027',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000027',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000027",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H09M31S",
+    "AmountINR": "100.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000027',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000027',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000027",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H09M31S",
+    "AmountINR": "100.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000028',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000028',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000028",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H10M03S",
+    "AmountINR": "200.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000028',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000028',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000028",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H10M03S",
+    "AmountINR": "200.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000029',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000029',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000029",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H10M09S",
+    "AmountINR": "300.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000029',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000029',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000029",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H10M09S",
+    "AmountINR": "300.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000030',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000030',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000030",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H24M24S",
+    "AmountINR": "1001.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000030',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000030',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000030",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H24M24S",
+    "AmountINR": "1001.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000031',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000031',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000031",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H24M29S",
+    "AmountINR": "1002.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000031',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000031',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000031",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H24M29S",
+    "AmountINR": "1002.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000032',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000032',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000032",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H24M31S",
+    "AmountINR": "1003.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000032',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000032',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000032",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H24M31S",
+    "AmountINR": "1003.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000033',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000033',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000033",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H24M37S",
+    "AmountINR": "1004.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000033',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000033',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000033",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H24M37S",
+    "AmountINR": "1004.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000034',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000034',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000034",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H24M42S",
+    "AmountINR": "1005.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000034',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000034',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000034",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H24M42S",
+    "AmountINR": "1005.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000035',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000035',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000035",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H24M46S",
+    "AmountINR": "1006.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000035',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000035',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000035",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H24M46S",
+    "AmountINR": "1006.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000036',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000036',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000036",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H24M54S",
+    "AmountINR": "1007.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000036',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000036',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000036",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H24M54S",
+    "AmountINR": "1007.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000037',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000037',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000037",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H25M00S",
+    "AmountINR": "1008.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000037',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000037',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000037",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H25M00S",
+    "AmountINR": "1008.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000038',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000038',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000038",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H25M04S",
+    "AmountINR": "1009.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000038',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000038',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000038",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-18",
+    "PostingTime": "PT23H25M04S",
+    "AmountINR": "1009.000",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000039',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000039',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000039",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-21",
+    "PostingTime": "PT10H11M39S",
+    "AmountINR": "1000.000",
+    "UTRReference": "TEST 1",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000039',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='1900000039',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "1900000039",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "500000",
+    "DocumentType": "KR",
+    "PostingDate": "2026-09-21",
+    "PostingTime": "PT10H11M39S",
+    "AmountINR": "1000.000",
+    "UTRReference": "TEST 1",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='2000000000',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='2000000000',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "2000000000",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "ZP",
+    "PostingDate": "2026-09-04",
+    "PostingTime": "PT11H44M40S",
+    "AmountINR": "5696991.940",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='2000000000',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='2000000000',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "2000000000",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "190000",
+    "DocumentType": "ZP",
+    "PostingDate": "2026-09-04",
+    "PostingTime": "PT11H44M40S",
+    "AmountINR": "5696991.940",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='2000000001',FiscalYear='2026',LineItem='001')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='2000000001',FiscalYear='2026',LineItem='001')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "2000000001",
+    "FiscalYear": "2026",
+    "LineItem": "001",
+    "GLAccount": "150000",
+    "DocumentType": "ZP",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT18H12M33S",
+    "AmountINR": "300899.900",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  },
+  {
+    "__metadata": {
+      "id": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='2000000001',FiscalYear='2026',LineItem='002')",
+      "uri": "https://192.168.1.55:44300/sap/opu/odata/sap/ZGLANOMALYV_CDS/ZGLANOMALYV(CompanyCode='GT01',DocumentNumber='2000000001',FiscalYear='2026',LineItem='002')",
+      "type": "ZGLANOMALYV_CDS.ZGLANOMALYVType"
+    },
+    "CompanyCode": "GT01",
+    "DocumentNumber": "2000000001",
+    "FiscalYear": "2026",
+    "LineItem": "002",
+    "GLAccount": "190000",
+    "DocumentType": "ZP",
+    "PostingDate": "2026-09-08",
+    "PostingTime": "PT18H12M33S",
+    "AmountINR": "300899.900",
+    "UTRReference": "",
+    "TradingPartner": "",
+    "DocStatus": ""
+  }
+]
