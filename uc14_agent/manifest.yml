@@ -1,0 +1,20 @@
+---
+applications:
+- name: uc14-gl-anomaly-agent
+  instances: 1
+  memory: 512M
+  disk_quota: 1024M
+  buildpacks:
+    - python_buildpack
+  command: python -m uvicorn ui.app:app --host 0.0.0.0 --port $PORT
+  routes:
+    - route: uc14-gl-anomaly-agent-grumpy-fossa-eb.cfapps.eu30.hana.ondemand.com
+  health-check-type: http
+  health-check-http-endpoint: /api/health
+  env:
+    PYTHONUNBUFFERED: "1"
+    SAP_MOCK_MODE: "false"
+    SAP_BASE_URL: "https://192.168.1.55:44300"
+    SAP_CLIENT: "200"
+    SAP_USERNAME: "INT_Prithvi"
+    SAP_PASSWORD: "Pst@576400"

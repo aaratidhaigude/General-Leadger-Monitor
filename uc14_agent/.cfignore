@@ -1,0 +1,30 @@
+# Cloud Foundry Ignore Rules
+# Exclude local virtual environments and caches from droplet packaging
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Git & CI/CD
+.git/
+.gitignore
+.github/
+
+# Local run output files (to keep upload lightweight)
+results/*.xlsx
+results/*.json
+!results/.gitkeep
+
+# Unit tests (optional in production container)
+tests/
+
+# Local config & IDE
+.env
+.env.local
+.vscode/
+.idea/
+*.log
