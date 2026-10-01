@@ -1,0 +1,28 @@
+================================================================================
+                    SAP S/4HANA ENTERPRISE SYSTEM - ME33K
+                    OUTLINE AGREEMENT / CONTRACT SPECIFICATION
+================================================================================
+Contract Document No: 4600001002               Agreement Type: WK (Value Contract)
+Vendor Code        : 10003912                 Vendor Name   : Infosys BPM Limited
+Company Code       : IN01 (Tata Motors India) Purchasing Org: 1000 (Global Procurement)
+Purchasing Group   : P02 (BPO & Shared Svcs)  Created On    : 01.01.2026
+Validity Start Date: 01.01.2026               Validity End  : 31.12.2028
+Target Value (INR) : ₹150,000,000.00          Target Quantity: 12,000 Hours
+
+--------------------------------------------------------------------------------
+HEADER CONDITION & PAYMENT TERMS (EKKO/LFM1)
+--------------------------------------------------------------------------------
+Payment Terms      : Z001 (2% discount if paid in 10 days, Net 30 days)
+Incoterms          : DDP (Delivered Duty Paid - Pune Plant 1002)
+Currency           : INR
+
+SECTION 1: ITEM OVERVIEW & RATE CARDS (EKPO)
+Item | Material No | Short Text                   | Target Qty | Unit | Net Price (INR) | Plant
+-----|-------------|------------------------------|------------|------|-----------------|------
+10   | MAT-BP-001  | BPO Managed Operations       | 12         | MON  | ₹120,000.00     | 1002
+20   | MAT-BP-002  | Excess Invoice Processing    | 5,000      | DOC  | ₹450.00         | 1002
+
+SECTION 2: CUMULATIVE VOLUME REBATE AGREEMENT (CONDITION TYPE: ZREB)
+2.1 Volume Threshold: If cumulative SAP invoice receipts (RBKP) exceed ₹15,000,000 in a calendar year, vendor grants a 3.5% retroactive volume discount across all line items.
+2.2 Payment Terms: Net 30 days. Early payment within 10 days qualifies for 2.0% cash discount under term 2/10 Net 30.
+================================================================================

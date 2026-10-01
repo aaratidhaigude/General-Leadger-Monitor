@@ -1,0 +1,33 @@
+================================================================================
+                    SAP S/4HANA ENTERPRISE SYSTEM - ME33K
+                    OUTLINE AGREEMENT / CONTRACT SPECIFICATION
+================================================================================
+Contract Document No: 4600001001               Agreement Type: MK (Quantity Contract)
+Vendor Code        : 10002481                 Vendor Name   : Tata Consultancy Services Ltd
+Company Code       : IN01 (Tata Motors India) Purchasing Org: 1000 (Global Procurement)
+Purchasing Group   : P01 (IT & Engineering)   Created On    : 01.01.2026
+Validity Start Date: 01.01.2026               Validity End  : 31.12.2028
+Target Value (INR) : ₹100,000,000.00          Target Quantity: 10,000 Hours
+
+--------------------------------------------------------------------------------
+HEADER CONDITION & PAYMENT TERMS (EKKO/LFM1)
+--------------------------------------------------------------------------------
+Payment Terms      : Z001 (2% discount if paid in 10 days, Net 30 days)
+Incoterms          : DDP (Delivered Duty Paid - Mumbai Plant 1001)
+Currency           : INR
+
+SECTION 1: ITEM OVERVIEW & RATE CARDS (EKPO)
+Item | Material No | Short Text                   | Target Qty | Unit | Net Price (INR) | Plant
+-----|-------------|------------------------------|------------|------|-----------------|------
+10   | MAT-IT-001  | IT Engineering & Consulting  | 5,000      | HRS  | ₹8,500.00       | 1001
+20   | MAT-IT-002  | QA & Software Testing        | 3,000      | HRS  | ₹6,500.00       | 1001
+30   | MAT-HW-003  | Enterprise Server Hardware   | 2,000      | EA   | ₹85,000.00      | 1001
+
+SECTION 2: CUMULATIVE VOLUME REBATE AGREEMENT (CONDITION TYPE: ZREB)
+2.1 Volume Threshold: If cumulative SAP invoice receipts (RBKP) exceed ₹10,000,000 (₹1 Crore) in a calendar year, vendor grants a 5.0% retroactive volume rebate across all line items.
+2.2 Rebate Settlement: Buyer (IN01) is authorized to issue automated SAP Credit Memos (FB65) or deduct rebate values from pending F110 payment runs.
+
+SECTION 3: PRICE VARIANCE & PENALTY CLAUSES
+3.1 Unapproved Price Increase: Invoice unit rate exceeding Item 10 rate card (₹8,500.00/HR) without an executed SAP Change Order will trigger an automatic SAP Payment Block (BSEG-ZLSPR = 'A').
+3.2 Late Delivery Penalty: Liquidated damages of 0.5% per week of delay up to a maximum penalty of 10% of PO value.
+================================================================================

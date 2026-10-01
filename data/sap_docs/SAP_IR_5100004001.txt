@@ -1,0 +1,18 @@
+================================================================================
+                    SAP S/4HANA ENTERPRISE SYSTEM - MIRO / FB60
+                    VENDOR TAX INVOICE DISPLAY (RBKP / RSEG / BKPF / BSEG)
+================================================================================
+Invoice Document No: 5100004001               Posting Date  : 20.01.2026
+Vendor Invoice No  : INV-2026-TCS-001         Invoice Date  : 19.01.2026
+Vendor Code        : 10002481 (TCS Ltd)       Vendor GSTIN  : 27AAACT2727Q1ZW
+PO Reference       : 4500002001               Contract Ref  : 4600001001
+Payment Block      : FREE (No Block)          Payment Terms : Z001 (2/10 Net 30)
+
+ACCOUNTING DOCUMENT ITEM DISPLAY (BSEG)
+Line | GL Account | Short Text                   | Debit/Credit | Amount (INR) | Tax Code | GST Portal Status
+-----|------------|------------------------------|--------------|--------------|----------|------------------
+1    | 310000     | Vendor TCS Payable           | Credit       | ₹138,650.00  | V1       | GSTR-2B Verified
+2    | 401000     | IT Consulting Expense        | Debit        | ₹85,000.00   | V1       | GSTR-2B Verified
+3    | 402000     | Software Testing Expense     | Debit        | ₹32,500.00   | V1       | GSTR-2B Verified
+4    | 215000     | Input GST Recoverable        | Debit        | ₹21,150.00   | V1       | GSTR-2B Verified
+================================================================================

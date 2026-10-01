@@ -1,0 +1,17 @@
+MASTER SERVICES AGREEMENT & RATE CARD
+Contract Reference: CNT-TATA-2026
+Vendor Name: Tata Consultancy Services Ltd
+Effective Date: 2026-01-01 to 2028-12-31
+
+SECTION 1: BASE PRICING & RATE CARDS
+1.1 Software Development Services: Base rate ₹8,500 per man-day for IT Consulting & Engineering (KR Document Type).
+1.2 Project Management & QA: Base rate ₹6,500 per man-day.
+1.3 Hardware Procurement & Infrastructure: Unit price cap ₹85,000 per server module.
+
+SECTION 2: CUMULATIVE VOLUME REBATES
+2.1 Annual Purchase Volume Threshold: If total cumulative invoice volume exceeds ₹10,000,000 (₹1 Crore) in a calendar year, Tata Consultancy Services Ltd agrees to a 5% retroactive volume rebate across all invoices.
+2.2 Rebate Claim Process: Buyer may deduct rebate value via draft SAP Credit Memo (FB65) or vendor deduction notice.
+
+SECTION 3: LATE PAYMENT & PENALTY CLAUSES
+3.1 Invoice Payment Terms: Net 30 days. Early payment within 10 days qualifies for 2.0% cash discount under term 2/10 Net 30.
+3.2 Overbilling Penalty: In the event invoice rate exceeds Clause 1.1 rate card without prior written change request (CR), buyer reserves right to block payment (BSEG-ZLSPR = 'A') and issue Debit Note.

@@ -1,0 +1,11 @@
+MASTER SERVICES AGREEMENT & RATE CARD
+Contract Reference: CNT-WIPRO-2026
+Vendor Name: Wipro Enterprises Pvt Ltd
+Effective Date: 2026-01-01 to 2028-12-31
+
+SECTION 1: BASE PRICING & RATE CARDS
+1.1 Enterprise Software & Cloud Operations: Base rate ₹7,500 per man-day.
+1.2 Support & Infrastructure: Flat fee ₹75,000 per month.
+
+SECTION 2: EARLY PAYMENT & DISCOUNTS
+2.1 Payment Terms: Net 30 days. Early payment within 7 days qualifies for 1.5% discount.

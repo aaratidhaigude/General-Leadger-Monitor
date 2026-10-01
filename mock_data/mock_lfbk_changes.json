@@ -1,0 +1,48 @@
+{
+  "lfbk_changes": [
+    {
+      "vendor_code": "V10001",
+      "vendor_name": "ShiftedBank Vendors Ltd",
+      "change_date": "2026-09-18",
+      "changed_by": "USER_RAVI",
+      "old_bank_account": "HDFC****4521",
+      "new_bank_account": "ICICI****8834",
+      "old_bank_key": "HDFCINBBXXX",
+      "new_bank_key": "ICICINBBXXX",
+      "days_since_change": 6
+    },
+    {
+      "vendor_code": "V10002",
+      "vendor_name": "SuspectChange Corp",
+      "change_date": "2026-09-19",
+      "changed_by": "USER_PRIYA",
+      "old_bank_account": "SBI****7890",
+      "new_bank_account": "AXIS****3341",
+      "old_bank_key": "SBININBBXXX",
+      "new_bank_key": "UTIBINBBXXX",
+      "days_since_change": 5
+    },
+    {
+      "vendor_code": "V10003",
+      "vendor_name": "Moderate Risk Vendor Pvt Ltd",
+      "change_date": "2026-09-04",
+      "changed_by": "USER_ADMIN",
+      "old_bank_account": "KOTAK****2211",
+      "new_bank_account": "HDFC****9967",
+      "old_bank_key": "KKBKINBBXXX",
+      "new_bank_key": "HDFCINBBXXX",
+      "days_since_change": 20
+    },
+    {
+      "vendor_code": "V10004",
+      "vendor_name": "Recent Update Suppliers",
+      "change_date": "2026-09-20",
+      "changed_by": "USER_MEENA",
+      "old_bank_account": "AXIS****5512",
+      "new_bank_account": "ICICI****7723",
+      "old_bank_key": "UTIBINBBXXX",
+      "new_bank_key": "ICICINBBXXX",
+      "days_since_change": 4
+    }
+  ]
+}

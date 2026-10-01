@@ -1,0 +1,21 @@
+================================================================================
+                    SAP S/4HANA ENTERPRISE SYSTEM - ME23N
+                    STANDARD PURCHASE ORDER DISPLAY (EKKO / EKPO)
+================================================================================
+PO Number          : 4500002001               PO Date       : 15.01.2026
+Vendor Code        : 10002481                 Vendor Name   : Tata Consultancy Services Ltd
+Company Code       : IN01 (Tata Motors India) Purchasing Org: 1000 (Global Procurement)
+Purchasing Group   : P01 (IT & Engineering)   Contract Ref  : 4600001001
+Payment Terms      : Z001 (2/10 Net 30)       Currency      : INR
+
+ITEM DETAILS (EKPO)
+Item | Material No | Description                  | PO Qty | Unit | Net Price (INR) | Total Value (INR) | Plant | Stor Loc
+-----|-------------|------------------------------|--------|------|-----------------|-------------------|-------|---------
+10   | MAT-IT-001  | IT Engineering & Consulting  | 10     | HRS  | ₹8,500.00       | ₹85,000.00        | 1001  | 0001
+20   | MAT-IT-002  | QA & Software Testing        | 5      | HRS  | ₹6,500.00       | ₹32,500.00        | 1001  | 0001
+
+HEADER TOTAL NET VALUE: ₹117,500.00 INR
+TAX CODE            : V1 (18% Input GST Eligible)
+TAX AMOUNT (18%)    : ₹21,150.00 INR
+TOTAL GROSS VALUE   : ₹138,650.00 INR
+================================================================================

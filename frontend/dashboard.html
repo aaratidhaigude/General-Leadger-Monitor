@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAP Vendor Intelligence & AP Risk Agent (VIRA) — Enterprise v2.0</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <!-- SAP 72 & Fiori Font stack fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    /* ── SAP FIORI HORIZON COLOR SYSTEM (DARK & LIGHT) ── */
+    :root, [data-theme="dark"] {
+      --sap-bg: #12171c;
+      --sap-shell-bg: #1a2027;
+      --sap-shell-border: #29313d;
+      --sap-surface: #1d232c;
+      --sap-surface-2: #242c37;
+      --sap-surface-3: #2d3644;
+      --sap-border: #323b49;
+      --sap-border-light: #3f4b5d;
+      --sap-text: #f5f6f8;
+      --sap-text-muted: #9aa7b5;
+      --sap-accent: #479eeb;
+      --sap-accent-hover: #5cb3ff;
+      --sap-accent-bg: rgba(71, 158, 235, 0.14);
+      --sap-negative: #ff6a6a;
+      --sap-negative-bg: rgba(255, 106, 106, 0.16);
+      --sap-negative-border: rgba(255, 106, 106, 0.35);
+      --sap-critical: #f5a623;
+      --sap-critical-bg: rgba(245, 166, 35, 0.16);
+      --sap-critical-border: rgba(245, 166, 35, 0.35);
+      --sap-positive: #46b86e;
+      --sap-positive-bg: rgba(70, 184, 110, 0.16);
+      --sap-positive-border: rgba(70, 184, 110, 0.35);
+      --sap-info: #479eeb;
+      --sap-info-bg: rgba(71, 158, 235, 0.16);
+      --sap-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+      --sap-chart-grid: #28303d;
+      --sap-chart-text: #9aa7b5;
+      --sap-table-hover: #262f3c;
+    }
+
+    [data-theme="light"] {
+      --sap-bg: #edf1f5;
+      --sap-shell-bg: #1d2d3e;
+      --sap-shell-border: #14202c;
+      --sap-surface: #ffffff;
+      --sap-surface-2: #f4f6f9;
+      --sap-surface-3: #e8ecf1;
+      --sap-border: #d4dce5;
+      --sap-border-light: #bac6d4;
+      --sap-text: #1d2d3e;
+      --sap-text-muted: #596b7d;
+      --sap-accent: #0070f2;
+      --sap-accent-hover: #0056b8;
+      --sap-accent-bg: rgba(0, 112, 242, 0.1);
+      --sap-negative: #bb0000;
+      --sap-negative-bg: rgba(187, 0, 0, 0.09);
+      --sap-negative-border: rgba(187, 0, 0, 0.28);
+      --sap-critical: #c76a00;
+      --sap-critical-bg: rgba(199, 106, 0, 0.11);
+      --sap-critical-border: rgba(199, 106, 0, 0.3);
+      --sap-positive: #107e3e;
+      --sap-positive-bg: rgba(16, 126, 62, 0.1);
+      --sap-positive-border: rgba(16, 126, 62, 0.3);
+      --sap-info: #0070f2;
+      --sap-info-bg: rgba(0, 112, 242, 0.09);
+      --sap-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      --sap-chart-grid: #e2e8f0;
+      --sap-chart-text: #596b7d;
+      --sap-table-hover: #f0f4f9;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: '72', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--sap-bg);
+      color: var(--sap-text);
+      min-height: 100vh;
+      overflow-x: hidden;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+
+    /* ── SAP FIORI SHELLBAR (TOP NAVBAR) ── */
+    .sap-shellbar {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 24px; height: 54px;
+      background: var(--sap-shell-bg);
+      border-bottom: 1px solid var(--sap-shell-border);
+      position: sticky; top: 0; z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      color: #ffffff;
+    }
+    .sap-shellbar-left { display: flex; align-items: center; gap: 12px; }
+    .sap-logo-badge {
+      background: #0070f2; color: #fff; font-weight: 800; font-size: 11px;
+      padding: 3px 7px; border-radius: 4px; letter-spacing: 0.5px;
+    }
+    .sap-shellbar-title {
+      font-size: 16px; font-weight: 700; color: #ffffff; display: flex; align-items: center; gap: 8px;
+    }
+    .sap-shellbar-subtitle {
+      font-size: 11px; color: #cbd5e1; font-weight: 500;
+      background: rgba(255,255,255,0.12); padding: 2px 8px; border-radius: 4px;
+    }
+    .sap-shellbar-right { display: flex; align-items: center; gap: 8px; }
+    .sap-nav-time { color: #94a3b8; font-size: 12px; font-variant-numeric: tabular-nums; margin-right: 6px; }
+
+    /* ── SAP FIORI BUTTONS ── */
+    .sap-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 7px 14px; border-radius: 6px; font-size: 12px; font-weight: 600;
+      border: 1px solid transparent; cursor: pointer; transition: all 0.16s ease;
+      white-space: nowrap; user-select: none; font-family: inherit;
+    }
+    .sap-btn-emphasized {
+      background: var(--sap-accent); color: #ffffff;
+    }
+    .sap-btn-emphasized:hover:not(:disabled) {
+      background: var(--sap-accent-hover); box-shadow: 0 2px 8px rgba(0, 112, 242, 0.35);
+    }
+    .sap-btn-default {
+      background: var(--sap-surface); color: var(--sap-text); border: 1px solid var(--sap-border);
+    }
+    .sap-btn-default:hover:not(:disabled) {
+      background: var(--sap-surface-2); border-color: var(--sap-border-light);
+    }
+    .sap-btn-transparent {
+      background: transparent; color: inherit; border: 1px solid rgba(255,255,255,0.2);
+    }
+    .sap-btn-transparent:hover:not(:disabled) {
+      background: rgba(255,255,255,0.12);
+    }
+    .sap-btn-accept {
+      background: var(--sap-positive); color: #ffffff;
+    }
+    .sap-btn-accept:hover:not(:disabled) { opacity: 0.9; }
+    .sap-btn-reject {
+      background: var(--sap-negative); color: #ffffff;
+    }
+    .sap-btn-reject:hover:not(:disabled) { opacity: 0.9; }
+    .sap-btn-sm { padding: 5px 10px; font-size: 11.5px; }
+    .sap-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+    /* ── DROPDOWN MENU ── */
+    .dropdown { position: relative; }
+    .dropdown-menu {
+      display: none; position: absolute; top: calc(100% + 6px); right: 0;
+      background: var(--sap-surface); border: 1px solid var(--sap-border); border-radius: 8px;
+      min-width: 200px; box-shadow: var(--sap-shadow); z-index: 200; overflow: hidden;
+    }
+    .dropdown-menu.open { display: block; animation: sapFadeIn 0.15s ease; }
+    @keyframes sapFadeIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: translateY(0); } }
+    .dropdown-item {
+      display: flex; align-items: center; gap: 8px; padding: 10px 14px; font-size: 12.5px; color: var(--sap-text);
+      cursor: pointer; transition: background 0.15s;
+    }
+    .dropdown-item:hover { background: var(--sap-surface-2); }
+
+    /* ── MAIN CONTENT CONTAINER ── */
+    .main { padding: 20px 24px 40px; max-width: 1600px; margin: 0 auto; }
+
+    /* ── STICKY TOP CONTROLS BAR ── */
+    .sticky-top-bar {
+      position: sticky; top: 54px; z-index: 90;
+      background: var(--sap-bg); padding-top: 4px; padding-bottom: 8px;
+      transition: background-color 0.25s ease;
+    }
+
+    /* ── SAP FIORI KPI TILES (GENERIC TILES) ── */
+    .kpi-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px; margin-bottom: 16px;
+    }
+    .sap-tile {
+      background: var(--sap-surface); border: 1px solid var(--sap-border); border-radius: 8px;
+      padding: 14px 16px; display: flex; flex-direction: column; gap: 4px;
+      box-shadow: var(--sap-shadow); transition: transform 0.15s, border-color 0.15s; cursor: default;
+      position: relative; overflow: hidden;
+    }
+    .sap-tile:hover { transform: translateY(-2px); border-color: var(--sap-border-light); }
+    .sap-tile-stripe { position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+    .stripe-blue { background: var(--sap-accent); }
+    .stripe-red { background: var(--sap-negative); }
+    .stripe-yellow { background: var(--sap-critical); }
+    .stripe-green { background: var(--sap-positive); }
+
+    .sap-tile-header { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--sap-text-muted); }
+    .sap-tile-value { font-size: 26px; font-weight: 800; line-height: 1.1; margin-top: 2px; }
+    .sap-tile-sub { font-size: 11px; color: var(--sap-text-muted); }
+    .kpi-red .sap-tile-value { color: var(--sap-negative); }
+    .kpi-yellow .sap-tile-value { color: var(--sap-critical); }
+    .kpi-green .sap-tile-value { color: var(--sap-positive); }
+    .kpi-blue .sap-tile-value { color: var(--sap-accent); }
+
+    /* ── SAP ACTION TOOLBAR ── */
+    .action-bar {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; margin-bottom: 14px; flex-wrap: wrap;
+    }
+    .action-left { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .sap-input {
+      background: var(--sap-surface); border: 1px solid var(--sap-border); border-radius: 6px;
+      padding: 7px 12px; color: var(--sap-text); font-size: 12.5px; width: 240px;
+      outline: none; transition: border-color 0.15s; font-family: inherit;
+    }
+    .sap-input:focus { border-color: var(--sap-accent); }
+    .sap-select {
+      background: var(--sap-surface); border: 1px solid var(--sap-border); border-radius: 6px;
+      padding: 7px 12px; color: var(--sap-text); font-size: 12.5px; cursor: pointer; outline: none; font-family: inherit;
+    }
+    .sap-select:focus { border-color: var(--sap-accent); }
+
+    /* ── SAP FIORI ICON TAB BAR (TABS) ── */
+    .sap-tabbar {
+      display: flex; gap: 2px; margin-bottom: 16px; border-bottom: 1px solid var(--sap-border);
+    }
+    .sap-tab {
+      padding: 9px 16px; font-size: 12.5px; font-weight: 600; cursor: pointer;
+      color: var(--sap-text-muted); transition: all 0.15s;
+      border-bottom: 3px solid transparent; user-select: none;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .sap-tab:hover { color: var(--sap-text); background: var(--sap-surface-2); }
+    .sap-tab.active {
+      color: var(--sap-accent); border-bottom-color: var(--sap-accent); font-weight: 700;
+    }
+    .sap-badge-count {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-width: 18px; height: 18px; background: var(--sap-critical); color: #ffffff;
+      border-radius: 9px; font-size: 10px; font-weight: 700; padding: 0 5px;
+    }
+
+    /* ── CHARTS ROW ── */
+    .charts-row { display: grid; grid-template-columns: 290px 1fr; gap: 14px; margin-bottom: 18px; }
+    .sap-card {
+      background: var(--sap-surface); border: 1px solid var(--sap-border); border-radius: 8px;
+      padding: 16px 18px; display: flex; flex-direction: column; box-shadow: var(--sap-shadow);
+    }
+    .sap-card-title {
+      font-size: 11.5px; font-weight: 700; margin-bottom: 10px; color: var(--sap-text-muted);
+      text-transform: uppercase; letter-spacing: 0.5px;
+    }
+    .chart-wrapper { position: relative; height: 210px; width: 100%; display: flex; align-items: center; justify-content: center; }
+
+    /* ── SAP FIORI TABLE ── */
+    .sap-table-card {
+      background: var(--sap-surface); border: 1px solid var(--sap-border); border-radius: 8px;
+      overflow: hidden; box-shadow: var(--sap-shadow);
+    }
+    .table-wrapper { overflow-x: auto; max-height: 580px; }
+    table { width: 100%; border-collapse: collapse; text-align: left; }
+    th {
+      background: var(--sap-surface-2); padding: 11px 14px; font-size: 11px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.5px; color: var(--sap-text-muted);
+      white-space: nowrap; position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--sap-border);
+    }
+    td {
+      padding: 11px 14px; font-size: 12.5px; border-top: 1px solid var(--sap-border);
+      white-space: nowrap; max-width: 220px; overflow: hidden; text-overflow: ellipsis; vertical-align: middle;
+    }
+    tr.clickable-row { cursor: pointer; transition: background 0.12s ease; }
+    tr.clickable-row:hover td { background: var(--sap-table-hover) !important; }
+    .empty-state { text-align: center; padding: 50px 20px; color: var(--sap-text-muted); }
+    .empty-state .empty-icon { font-size: 38px; margin-bottom: 10px; }
+
+    /* ── SAP OBJECT STATUS PILLS ── */
+    .sap-status-pill {
+      display: inline-flex; align-items: center; gap: 4px; padding: 3px 8px; border-radius: 12px;
+      font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px;
+    }
+    .status-HIGH { background: var(--sap-negative-bg); color: var(--sap-negative); border: 1px solid var(--sap-negative-border); }
+    .status-MEDIUM { background: var(--sap-critical-bg); color: var(--sap-critical); border: 1px solid var(--sap-critical-border); }
+    .status-LOW { background: var(--sap-positive-bg); color: var(--sap-positive); border: 1px solid var(--sap-positive-border); }
+
+    /* ── SAP DOCUMENT TYPE & STATUS BADGES ── */
+    .sap-status-badge {
+      display: inline-block; padding: 2px 7px; border-radius: 4px; font-size: 10px; font-weight: 700; text-transform: uppercase;
+    }
+    .sap-V { background: var(--sap-critical-bg); color: var(--sap-critical); border: 1px solid var(--sap-critical-border); }
+    .sap-A { background: var(--sap-accent-bg); color: var(--sap-accent); border: 1px solid var(--sap-accent); }
+    .sap-Z { background: var(--sap-positive-bg); color: var(--sap-positive); border: 1px solid var(--sap-positive-border); }
+
+    /* ── ARI SCORE PROGRESS BAR ── */
+    .ari-bar { display: flex; align-items: center; gap: 8px; min-width: 90px; }
+    .ari-bg { flex: 1; height: 6px; background: var(--sap-surface-3); border-radius: 3px; overflow: hidden; }
+    .ari-fill { height: 100%; border-radius: 3px; transition: width 0.4s ease; }
+    .ari-num { font-size: 12px; font-weight: 700; min-width: 32px; text-align: right; }
+
+    /* ── PAYMENT BLOCK BADGE ── */
+    .block-badge {
+      display: inline-flex; align-items: center; gap: 3px;
+      background: var(--sap-negative-bg); color: var(--sap-negative);
+      border: 1px solid var(--sap-negative-border); border-radius: 4px;
+      padding: 2px 7px; font-size: 10px; font-weight: 700;
+    }
+
+    /* ── SAP DETAIL DRAWER (OBJECT PAGE) ── */
+    .drawer-overlay {
+      display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.55);
+      z-index: 300; backdrop-filter: blur(3px); animation: sapFadeIn 0.2s ease;
+    }
+    .drawer-overlay.open { display: block; }
+    .drawer {
+      position: fixed; right: -550px; top: 0; width: 530px; height: 100vh;
+      background: var(--sap-surface); border-left: 1px solid var(--sap-border);
+      z-index: 400; display: flex; flex-direction: column;
+      transition: right 0.28s cubic-bezier(0.16, 1, 0.3, 1); box-shadow: var(--sap-shadow);
+    }
+    .drawer.open { right: 0; }
+    .drawer-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 18px; border-bottom: 1px solid var(--sap-border);
+      background: var(--sap-surface-2);
+    }
+    .drawer-title { font-size: 14.5px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+    .drawer-close {
+      width: 30px; height: 30px; border-radius: 4px; border: 1px solid var(--sap-border);
+      background: var(--sap-surface); color: var(--sap-text); font-size: 15px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; transition: all 0.15s;
+    }
+    .drawer-close:hover { background: var(--sap-negative); color: #fff; border-color: var(--sap-negative); }
+    .drawer-body { flex: 1; overflow-y: auto; padding: 18px; display: flex; flex-direction: column; gap: 14px; }
+    .drawer-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .meta-item { background: var(--sap-surface-2); border: 1px solid var(--sap-border); border-radius: 6px; padding: 9px 12px; }
+    .meta-label { font-size: 9.5px; color: var(--sap-text-muted); text-transform: uppercase; margin-bottom: 2px; font-weight: 700; }
+    .meta-value { font-size: 12.5px; font-weight: 600; word-break: break-all; }
+    .drawer-section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--sap-text-muted); margin-top: 4px; }
+
+    /* ── HARD OVERRIDE PROMINENT BANNER ── */
+    .override-banner-red {
+      background: var(--sap-negative-bg); border: 1.5px solid var(--sap-negative);
+      border-radius: 8px; padding: 12px 14px; display: flex; gap: 10px; align-items: flex-start;
+    }
+    .override-banner-red .icon { font-size: 20px; flex-shrink: 0; line-height: 1; margin-top: 2px; }
+    .override-banner-red .title { font-size: 12px; font-weight: 800; color: var(--sap-negative); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 2px; }
+    .override-banner-red .detail { font-size: 11.5px; line-height: 1.45; color: var(--sap-text); }
+
+    .step-item {
+      background: var(--sap-surface-2); border: 1px solid var(--sap-border); border-radius: 6px;
+      padding: 11px 13px; border-left: 4px solid var(--sap-border); margin-bottom: 7px;
+    }
+    .step-item.high { border-left-color: var(--sap-negative); }
+    .step-item.medium { border-left-color: var(--sap-critical); }
+    .step-item.low { border-left-color: var(--sap-positive); }
+    .step-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px; }
+    .step-name { font-size: 11.5px; font-weight: 700; }
+    .step-score { font-size: 15px; font-weight: 800; }
+    .step-detail { font-size: 11.5px; color: var(--sap-text-muted); line-height: 1.4; margin-top: 2px; }
+    .step-weight { font-size: 9.5px; color: var(--sap-accent); margin-top: 4px; font-weight: 700; }
+
+    .note-area {
+      background: var(--sap-surface-2); border: 1px solid var(--sap-border); border-radius: 6px;
+      padding: 8px 10px; color: var(--sap-text); font-size: 12px; width: 100%; resize: vertical; min-height: 55px; outline: none; font-family: inherit;
+    }
+    .note-area:focus { border-color: var(--sap-accent); }
+    .drawer-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+
+    /* ── REVIEW QUEUE ITEMS ── */
+    .queue-item {
+      background: var(--sap-surface); border: 1px solid var(--sap-border); border-radius: 8px;
+      padding: 14px 16px; margin-bottom: 10px; display: flex; justify-content: space-between;
+      align-items: center; gap: 12px; flex-wrap: wrap; transition: all 0.15s; box-shadow: var(--sap-shadow);
+    }
+    .queue-item:hover { border-color: var(--sap-border-light); }
+    .queue-item-left { flex: 1; min-width: 240px; }
+    .queue-item-right { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+
+    /* ── ANALYSIS GRID ── */
+    .analysis-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .stat-row { display: flex; justify-content: space-between; padding: 9px 0; border-bottom: 1px solid var(--sap-border); font-size: 12.5px; }
+    .stat-row:last-child { border-bottom: none; }
+
+    /* ── HISTORY LIST ── */
+    .history-item {
+      background: var(--sap-surface); border: 1px solid var(--sap-border); border-radius: 8px;
+      padding: 12px 16px; margin-bottom: 8px; display: flex; justify-content: space-between;
+      align-items: center; gap: 12px; flex-wrap: wrap; box-shadow: var(--sap-shadow);
+    }
+
+    /* ── ALERT CHIPS ── */
+    .alert-chip {
+      display: inline-flex; align-items: center; gap: 4px; background: var(--sap-negative-bg); color: var(--sap-negative);
+      border: 1px solid var(--sap-negative-border); border-radius: 4px; padding: 2px 7px; font-size: 10.5px; font-weight: 600; margin: 2px;
+    }
+
+    /* ── SAP GUI MODAL (FB03) ── */
+    .sap-modal-overlay {
+      display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7);
+      z-index: 500; backdrop-filter: blur(4px); align-items: center; justify-content: center;
+    }
+    .sap-modal-overlay.open { display: flex; animation: sapFadeIn 0.2s ease; }
+    .sap-modal {
+      width: 860px; max-width: 95vw; max-height: 90vh; background: var(--sap-surface);
+      border: 2px solid #0070f2; border-radius: 6px; box-shadow: var(--sap-shadow);
+      display: flex; flex-direction: column; overflow: hidden; color: var(--sap-text);
+    }
+    .sap-gui-titlebar {
+      background: #1d2d3e; padding: 8px 14px; display: flex; align-items: center; justify-content: space-between;
+      color: #93c5fd; font-weight: 700; font-size: 12px;
+    }
+    .sap-gui-toolbar {
+      background: var(--sap-surface-2); padding: 6px 12px; display: flex; gap: 6px;
+      border-bottom: 1px solid var(--sap-border); align-items: center; flex-wrap: wrap;
+    }
+    .sap-gui-content { padding: 14px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; font-size: 11.5px; }
+    .sap-gui-panel { background: var(--sap-surface-2); border: 1px solid var(--sap-border); border-radius: 4px; padding: 10px 12px; }
+    .sap-gui-panel-title { font-weight: 700; color: var(--sap-accent); font-size: 10.5px; text-transform: uppercase; margin-bottom: 6px; }
+    .sap-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+    .sap-field-label { font-size: 9.5px; color: var(--sap-text-muted); margin-bottom: 2px; }
+    .sap-field-val { font-size: 11.5px; font-weight: 600; font-family: 'JetBrains Mono', monospace; background: var(--sap-surface); padding: 3px 6px; border-radius: 4px; border: 1px solid var(--sap-border); }
+    .sap-gui-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+    .sap-gui-table th { background: var(--sap-surface-3); color: var(--sap-text); padding: 5px 7px; border: 1px solid var(--sap-border); text-align: left; }
+    .sap-gui-table td { padding: 5px 7px; border: 1px solid var(--sap-border); font-family: 'JetBrains Mono', monospace; }
+
+    /* ── NON-BLOCKING TOAST STACK ── */
+    #toast-container {
+      position: fixed; bottom: 20px; right: 20px; z-index: 9999;
+      display: flex; flex-direction: column-reverse; gap: 8px;
+      pointer-events: none; max-width: 360px;
+    }
+    .toast-item {
+      pointer-events: auto; background: var(--sap-surface); border: 1px solid var(--sap-border);
+      color: var(--sap-text); border-radius: 6px; padding: 11px 14px; font-size: 12px; display: flex; align-items: center; gap: 8px;
+      box-shadow: var(--sap-shadow); animation: sapToastSlide 0.22s ease forwards;
+    }
+    @keyframes sapToastSlide { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    .toast-item.toast-out { opacity: 0; transform: translateY(-8px); transition: all 0.2s ease; }
+    .toast-success { border-left: 4px solid var(--sap-positive); }
+    .toast-error { border-left: 4px solid var(--sap-negative); }
+    .toast-info { border-left: 4px solid var(--sap-accent); }
+
+    /* ── SPINNER ── */
+    .spinner { display: inline-block; width: 13px; height: 13px; border: 2px solid rgba(255,255,255,0.3); border-top-color: #fff; border-radius: 50%; animation: spin 0.6s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @media (max-width: 900px) {
+      .charts-row { grid-template-columns: 1fr; }
+      .analysis-grid { grid-template-columns: 1fr; }
+      .drawer { width: 100vw; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── SAP FIORI SHELLBAR ── -->
+<header class="sap-shellbar">
+  <div class="sap-shellbar-left">
+    <span class="sap-logo-badge">SAP S/4HANA</span>
+    <div class="sap-shellbar-title">
+      SAP Vendor Intelligence & AP Risk Agent (VIRA)
+      <span class="sap-shellbar-subtitle">Source-to-Pay AI Engine v2.0</span>
+    </div>
+  </div>
+  <div class="sap-shellbar-right">
+    <span class="sap-nav-time" id="navTime"></span>
+    <!-- THEME TOGGLE (LIGHT / DARK) -->
+    <button class="sap-btn sap-btn-transparent sap-btn-sm" onclick="toggleTheme()" id="themeToggleBtn" title="Switch Theme (Light / Dark Mode)">
+      ☀️ Light Mode
+    </button>
+    <button class="sap-btn sap-btn-transparent sap-btn-sm" onclick="resetDemo()" id="resetBtn" title="Reset Demo State">
+      🔄 Reset Demo
+    </button>
+    <button class="sap-btn sap-btn-emphasized sap-btn-sm" onclick="pullData()" id="pullBtn">
+      ⬇ Pull SAP Data
+    </button>
+  </div>
+</header>
+
+<!-- ── MAIN CONTENT ── -->
+<main class="main">
+
+  <div class="sticky-top-bar">
+    <!-- SAP FIORI KPI TILES -->
+    <div class="kpi-grid">
+      <div class="sap-tile kpi-blue">
+        <div class="sap-tile-stripe stripe-blue"></div>
+        <div class="sap-tile-header">Total Invoices</div>
+        <div class="sap-tile-value" id="kpiTotal">—</div>
+        <div class="sap-tile-sub">SAP OData / Mock</div>
+      </div>
+      <div class="sap-tile kpi-red">
+        <div class="sap-tile-stripe stripe-red"></div>
+        <div class="sap-tile-header">🔴 HIGH Risk</div>
+        <div class="sap-tile-value" id="kpiHigh">—</div>
+        <div class="sap-tile-sub">Action Required</div>
+      </div>
+      <div class="sap-tile kpi-yellow">
+        <div class="sap-tile-stripe stripe-yellow"></div>
+        <div class="sap-tile-header">🟡 MEDIUM Risk</div>
+        <div class="sap-tile-value" id="kpiMedium">—</div>
+        <div class="sap-tile-sub">Review Required</div>
+      </div>
+      <div class="sap-tile kpi-green">
+        <div class="sap-tile-stripe stripe-green"></div>
+        <div class="sap-tile-header">🟢 LOW Risk</div>
+        <div class="sap-tile-value" id="kpiLow">—</div>
+        <div class="sap-tile-sub">Auto-Clear Eligible</div>
+      </div>
+      <div class="sap-tile kpi-red">
+        <div class="sap-tile-stripe stripe-red"></div>
+        <div class="sap-tile-header">🚫 Auto-Blocked</div>
+        <div class="sap-tile-value" id="kpiBlocked">—</div>
+        <div class="sap-tile-sub">BSEG-ZLSPR = 'A'</div>
+      </div>
+      <div class="sap-tile kpi-yellow">
+        <div class="sap-tile-stripe stripe-yellow"></div>
+        <div class="sap-tile-header">⏳ Pending Review</div>
+        <div class="sap-tile-value" id="kpiPending">—</div>
+        <div class="sap-tile-sub">Review Queue</div>
+      </div>
+    </div>
+
+    <!-- SAP ACTION TOOLBAR -->
+    <div class="action-bar">
+      <div class="action-left">
+        <div class="dropdown">
+          <button class="sap-btn sap-btn-emphasized" onclick="toggleDropdown('engineDropdown')" id="engineBtn" disabled>
+            ⚙ Run Scoring Engine ▾
+          </button>
+          <div class="dropdown-menu" id="engineDropdown">
+            <div class="dropdown-item" onclick="runEngine('before')">🛡️ Before Payment Pipeline</div>
+            <div class="dropdown-item" onclick="runEngine('after')">🏦 After Payment Pipeline</div>
+            <div class="dropdown-item" onclick="runEngine('both')">⚡ Run Both Pipelines</div>
+          </div>
+        </div>
+        <input class="sap-input" id="globalSearch" type="text" placeholder="🔍 Search vendor, doc no, invoice..." oninput="handleSearch(this.value)" />
+        <select class="sap-select" onchange="handleTierFilter(this.value)" id="tierFilter">
+          <option value="">All Tiers (All)</option>
+          <option value="HIGH">🔴 HIGH Risk Only</option>
+          <option value="MEDIUM">🟡 MEDIUM Risk Only</option>
+          <option value="LOW">🟢 LOW Risk Only</option>
+        </select>
+      </div>
+      <div style="display:flex;gap:8px;">
+        <div class="dropdown">
+          <button class="sap-btn sap-btn-default sap-btn-sm" onclick="toggleDropdown('periodDropdown')" id="periodBtnLabel">📅 Period: This Month ▾</button>
+          <div class="dropdown-menu" id="periodDropdown">
+            <div class="dropdown-item" onclick="setPeriod('this_month')">📅 This Month (Current)</div>
+            <div class="dropdown-item" onclick="setPeriod('last_3m')">📅 Last 3 Months</div>
+            <div class="dropdown-item" onclick="setPeriod('last_6m')">📅 Last 6 Months</div>
+          </div>
+        </div>
+        <button class="sap-btn sap-btn-default sap-btn-sm" onclick="downloadReport('excel')">⬇ Export Excel</button>
+        <button class="sap-btn sap-btn-default sap-btn-sm" onclick="downloadReport('pdf')">⬇ Export PDF</button>
+      </div>
+    </div>
+
+    <!-- SAP ICON TAB BAR -->
+    <div class="sap-tabbar">
+      <div class="sap-tab active" onclick="switchTab('all')" id="tab-all">📋 All Invoices</div>
+      <div class="sap-tab" onclick="switchTab('before')" id="tab-before">🛡️ Before Payment</div>
+      <div class="sap-tab" onclick="switchTab('after')" id="tab-after">🏦 After Payment</div>
+      <div class="sap-tab" onclick="switchTab('review')" id="tab-review">⏳ Review Queue <span class="sap-badge-count" id="reviewBadge" style="display:none">0</span></div>
+      <div class="sap-tab" onclick="switchTab('analysis')" id="tab-analysis">📊 Analysis</div>
+      <div class="sap-tab" onclick="switchTab('history')" id="tab-history">📁 History</div>
+    </div>
+  </div>
+
+  <!-- TAB 1: ALL INVOICES -->
+  <div id="tabContent-all">
+    <div class="sap-table-card">
+      <div class="table-wrapper">
+        <table id="allTable">
+          <thead>
+            <tr>
+              <th>#</th><th>Doc No</th><th>Invoice No</th><th>Vendor Name</th>
+              <th>Amount (INR)</th><th>GL Account</th><th>Doc Type</th>
+              <th>Posting Date</th><th>SAP Status</th><th>Category / Scenario</th>
+            </tr>
+          </thead>
+          <tbody id="allBody">
+            <tr><td colspan="10"><div class="empty-state"><div class="empty-icon">📥</div>Click <b>"Pull SAP Data"</b> in the top right to pull invoices from SAP</div></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 2: BEFORE PAYMENT -->
+  <div id="tabContent-before" style="display:none">
+    <div class="charts-row" id="beforeCharts" style="display:none">
+      <div class="sap-card">
+        <div class="sap-card-title">Risk Distribution</div>
+        <div class="chart-wrapper">
+          <canvas id="beforeDonut"></canvas>
+        </div>
+      </div>
+      <div class="sap-card">
+        <div class="sap-card-title">ARI Score Distribution</div>
+        <div class="chart-wrapper">
+          <canvas id="beforeHist"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="sap-table-card">
+      <div class="table-wrapper">
+        <table id="beforeTable">
+          <thead>
+            <tr>
+              <th>#</th><th>Doc No</th><th>Invoice No</th><th>Vendor Name</th>
+              <th>Amount (INR)</th><th>ARI Score</th><th>Risk Tier</th>
+              <th>Bank Acct Change</th><th>Payment Block</th><th>Posting Date</th>
+            </tr>
+          </thead>
+          <tbody id="beforeBody">
+            <tr><td colspan="10"><div class="empty-state"><div class="empty-icon">⚙️</div>Click <b>"Run Scoring Engine ▾"</b> → Before Payment Pipeline to score items</div></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 3: AFTER PAYMENT -->
+  <div id="tabContent-after" style="display:none">
+    <div class="charts-row" id="afterCharts" style="display:none">
+      <div class="sap-card">
+        <div class="sap-card-title">Risk Distribution</div>
+        <div class="chart-wrapper">
+          <canvas id="afterDonut"></canvas>
+        </div>
+      </div>
+      <div class="sap-card">
+        <div class="sap-card-title">ARI Score Distribution</div>
+        <div class="chart-wrapper">
+          <canvas id="afterHist"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="sap-table-card">
+      <div class="table-wrapper">
+        <table id="afterTable">
+          <thead>
+            <tr>
+              <th>#</th><th>Doc No</th><th>Invoice No</th><th>Vendor Name</th>
+              <th>Amount (INR)</th><th>ARI Score</th><th>Risk Tier</th>
+              <th>Statement Recon (UC3)</th><th>Tax Portal Status (UC4)</th><th>GR/IR Root Cause (UC5)</th><th>Posting Date</th>
+            </tr>
+          </thead>
+          <tbody id="afterBody">
+            <tr><td colspan="11"><div class="empty-state"><div class="empty-icon">⚙️</div>Click <b>"Run Scoring Engine ▾"</b> → After Payment Pipeline to score items</div></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 4: REVIEW QUEUE -->
+  <div id="tabContent-review" style="display:none">
+    <div id="reviewQueue">
+      <div class="empty-state" style="padding:40px;"><div class="empty-icon">✅</div>No flagged items pending in review queue</div>
+    </div>
+  </div>
+
+  <!-- TAB 5: ANALYSIS -->
+  <div id="tabContent-analysis" style="display:none">
+    <div class="analysis-grid">
+      <div class="sap-card">
+        <div class="sap-card-title">Overall Risk Breakdown</div>
+        <div class="chart-wrapper">
+          <canvas id="analysisDonut"></canvas>
+        </div>
+      </div>
+      <div class="sap-card">
+        <div class="sap-card-title">Invoice Value at Risk (INR)</div>
+        <div class="chart-wrapper">
+          <canvas id="analysisBar"></canvas>
+        </div>
+      </div>
+      <div class="sap-card">
+        <div class="sap-card-title">Pipeline Breakdown Summary</div>
+        <div id="analysisSummary" style="margin-top:4px;"></div>
+      </div>
+      <div class="sap-card">
+        <div class="sap-card-title">Audit Key Statistics</div>
+        <div id="analysisStats" style="margin-top:4px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAB 6: HISTORY -->
+  <div id="tabContent-history" style="display:none">
+    <div id="historyList">
+      <div class="empty-state" style="padding:40px;"><div class="empty-icon">📁</div>No engine runs recorded yet</div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ── SAP DETAIL DRAWER ── -->
+<div class="drawer-overlay" id="drawerOverlay" onclick="closeDrawer()"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-header">
+    <div class="drawer-title" id="drawerTitle">Invoice Detail</div>
+    <button class="drawer-close" onclick="closeDrawer()" title="Close (ESC)">✕</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+</div>
+
+<!-- ── SAP GUI FB03 MODAL ── -->
+<div class="sap-modal-overlay" id="sapModalOverlay" onclick="closeSapModal(event)">
+  <div class="sap-modal" onclick="event.stopPropagation()">
+    <div class="sap-gui-titlebar">
+      <span>SAP S/4HANA GUI — Display Document: Overview (Transaction: FB03)</span>
+      <button class="drawer-close" style="width:22px;height:22px;font-size:11px;" onclick="closeSapModalDirect()">✕</button>
+    </div>
+    <div class="sap-gui-toolbar">
+      <button class="sap-btn sap-btn-default sap-btn-sm" onclick="toast('Document Header displayed in SAP session','info')">📋 Header</button>
+      <button class="sap-btn sap-btn-default sap-btn-sm" onclick="toast('Display changes audit log loaded','info')">📜 Changes Log</button>
+      <button class="sap-btn sap-btn-default sap-btn-sm" onclick="toast('G/L line item drilldown displayed','info')">🔍 Line Items</button>
+      <button class="sap-btn sap-btn-default sap-btn-sm" onclick="toast('SAP Print spool triggered','info')">🖨️ Print</button>
+    </div>
+    <div class="sap-gui-content" id="sapModalContent"></div>
+  </div>
+</div>
+
+<!-- ── TOAST CONTAINER ── -->
+<div id="toast-container"></div>
+
+<script>
+const API = 'http://localhost:8000';
+let state = {
+  invoices: [],
+  before: [],
+  after: [],
+  activeTab: 'all',
+  period: 'this_month',
+  searchQuery: '',
+  selectedTier: '',
+  theme: localStorage.getItem('sap_theme') || 'dark',
+  charts: {},
+  currentSelectedDoc: null
+};
+
+// ── THEME MANAGEMENT (LIGHT / DARK) ────────────────────────────────────────
+function applyTheme(t) {
+  document.documentElement.setAttribute('data-theme', t);
+  state.theme = t;
+  localStorage.setItem('sap_theme', t);
+  
+  const btn = document.getElementById('themeToggleBtn');
+  if (btn) {
+    btn.innerHTML = t === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+  }
+  
+  // Re-render active charts with updated theme colors
+  if (state.activeTab === 'before' && state.before.length > 0) renderBeforeCharts(state.before);
+  if (state.activeTab === 'after' && state.after.length > 0) renderAfterCharts(state.after);
+  if (state.activeTab === 'analysis' && (state.before.length > 0 || state.after.length > 0)) renderAnalysis();
+}
+
+function toggleTheme() {
+  const next = state.theme === 'dark' ? 'light' : 'dark';
+  applyTheme(next);
+  toast(`Switched to SAP Fiori ${next === 'dark' ? 'Horizon Dark' : 'Horizon Light'} theme`, 'info');
+}
+
+// ── CLOCK ──────────────────────────────────────────────────────────────────
+function updateClock() {
+  const el = document.getElementById('navTime');
+  if (el) {
+    el.textContent = new Date().toLocaleString('en-IN', {
+      day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:true
+    });
+  }
+}
+updateClock();
+setInterval(updateClock, 1000);
+
+// ── TOAST NOTIFICATIONS ────────────────────────────────────────────────────
+function toast(msg, type='info') {
+  const container = document.getElementById('toast-container');
+  const el = document.createElement('div');
+  el.className = `toast-item toast-${type}`;
+  const icons = { success:'✅', error:'❌', info:'ℹ️' };
+  el.innerHTML = `<span style="font-size:14px;">${icons[type]||'ℹ️'}</span><span style="line-height:1.4;">${msg}</span>`;
+  container.appendChild(el);
+
+  setTimeout(() => {
+    el.classList.add('toast-out');
+    setTimeout(() => el.remove(), 220);
+  }, 3200);
+}
+
+// ── DROPDOWN HANDLER ───────────────────────────────────────────────────────
+function toggleDropdown(id) {
+  const el = document.getElementById(id);
+  const isOpen = el.classList.contains('open');
+  document.querySelectorAll('.dropdown-menu.open').forEach(m => m.classList.remove('open'));
+  if (!isOpen) el.classList.add('open');
+}
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.dropdown')) {
+    document.querySelectorAll('.dropdown-menu.open').forEach(m => m.classList.remove('open'));
+  }
+});
+
+// ── TABS ───────────────────────────────────────────────────────────────────
+function switchTab(tab) {
+  document.querySelectorAll('.sap-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('[id^="tabContent-"]').forEach(t => t.style.display = 'none');
+  
+  const tabBtn = document.getElementById(`tab-${tab}`);
+  const tabContent = document.getElementById(`tabContent-${tab}`);
+  if (tabBtn) tabBtn.classList.add('active');
+  if (tabContent) tabContent.style.display = '';
+  
+  state.activeTab = tab;
+  
+  if (tab === 'review') loadReviewQueue();
+  if (tab === 'history') loadHistory();
+  if (tab === 'analysis') renderAnalysis();
+  
+  if (tab === 'before' && state.before.length > 0) {
+    setTimeout(() => { renderBeforeCharts(state.before); }, 50);
+  }
+  if (tab === 'after' && state.after.length > 0) {
+    setTimeout(() => { renderAfterCharts(state.after); }, 50);
+  }
+}
+
+// ── FORMATTERS & HELPERS ───────────────────────────────────────────────────
+function fmt(n) { return '₹' + Number(n).toLocaleString('en-IN', {maximumFractionDigits:0}); }
+function ariColor(v) { return v > 70 ? 'var(--sap-negative)' : v >= 50 ? 'var(--sap-critical)' : 'var(--sap-positive)'; }
+function tierPill(t) { return `<span class="sap-status-pill status-${t}">${t}</span>`; }
+function sapBadge(s) {
+  const labels = { V:'Parked', A:'Posted', Z:'Cleared' };
+  return `<span class="sap-status-badge sap-${s}">${labels[s]||s}</span>`;
+}
+function ariBar(v) {
+  const c = ariColor(v);
+  return `<div class="ari-bar"><div class="ari-bg"><div class="ari-fill" style="width:${Math.min(100, Math.max(0, v))}%;background:${c}"></div></div><span class="ari-num" style="color:${c}">${Number(v).toFixed(1)}</span></div>`;
+}
+
+// ── RESET DEMO ─────────────────────────────────────────────────────────────
+async function resetDemo() {
+  const btn = document.getElementById('resetBtn');
+  btn.innerHTML = '<span class="spinner"></span> Resetting...';
+  btn.disabled = true;
+  try {
+    const res = await fetch(`${API}/api/reset`, { method: 'POST' });
+    const data = await res.json();
+    
+    state.invoices = [];
+    state.before = [];
+    state.after = [];
+    
+    document.getElementById('kpiTotal').textContent = '—';
+    document.getElementById('kpiHigh').textContent = '—';
+    document.getElementById('kpiMedium').textContent = '—';
+    document.getElementById('kpiLow').textContent = '—';
+    document.getElementById('kpiBlocked').textContent = '—';
+    document.getElementById('kpiPending').textContent = '—';
+    document.getElementById('reviewBadge').style.display = 'none';
+
+    document.getElementById('engineBtn').disabled = true;
+
+    document.getElementById('allBody').innerHTML = `<tr><td colspan="10"><div class="empty-state"><div class="empty-icon">📥</div>Click <b>"Pull SAP Data"</b> in the top right to pull invoices from SAP</div></td></tr>`;
+    document.getElementById('beforeBody').innerHTML = `<tr><td colspan="11"><div class="empty-state"><div class="empty-icon">⚙️</div>Click <b>"Run Scoring Engine ▾"</b> → Before Payment Pipeline to score items</div></td></tr>`;
+    document.getElementById('afterBody').innerHTML = `<tr><td colspan="11"><div class="empty-state"><div class="empty-icon">⚙️</div>Click <b>"Run Scoring Engine ▾"</b> → After Payment Pipeline to score items</div></td></tr>`;
+    document.getElementById('reviewQueue').innerHTML = `<div class="empty-state" style="padding:40px;"><div class="empty-icon">✅</div>No flagged items pending in review queue</div>`;
+
+    document.getElementById('beforeCharts').style.display = 'none';
+    document.getElementById('afterCharts').style.display = 'none';
+
+    switchTab('all');
+    toast('Demo state has been reset successfully.', 'info');
+  } catch(e) {
+    toast('Reset failed: ' + e.message, 'error');
+  } finally {
+    btn.innerHTML = '🔄 Reset Demo';
+    btn.disabled = false;
+  }
+}
+
+// ── PULL SAP DATA ──────────────────────────────────────────────────────────
+async function pullData() {
+  const btn = document.getElementById('pullBtn');
+  btn.innerHTML = '<span class="spinner"></span> Pulling...';
+  btn.disabled = true;
+  try {
+    const res = await fetch(`${API}/api/pull`);
+    const data = await res.json();
+    
+    state.invoices = data.invoices || [];
+    state.before = [];
+    state.after = [];
+    
+    renderAllTable(state.invoices);
+    
+    document.getElementById('engineBtn').disabled = false;
+    document.getElementById('kpiTotal').textContent = data.total;
+    
+    document.getElementById('beforeBody').innerHTML = `<tr><td colspan="11"><div class="empty-state"><div class="empty-icon">⚙️</div>Invoices loaded. Click <b>"Run Scoring Engine ▾"</b> to score Before Payment items</div></td></tr>`;
+    document.getElementById('afterBody').innerHTML = `<tr><td colspan="11"><div class="empty-state"><div class="empty-icon">⚙️</div>Invoices loaded. Click <b>"Run Scoring Engine ▾"</b> to score After Payment items</div></td></tr>`;
+    document.getElementById('beforeCharts').style.display = 'none';
+    document.getElementById('afterCharts').style.display = 'none';
+    
+    toast(`Pulled ${data.total} invoices (${data.before_payment_count} Before Payment, ${data.after_payment_count} After Payment)`, 'success');
+    await refreshStats();
+  } catch(e) {
+    toast('Failed to pull data: ' + e.message, 'error');
+  } finally {
+    btn.innerHTML = '⬇ Pull SAP Data';
+    btn.disabled = false;
+  }
+}
+
+// ── RENDER ALL INVOICES TABLE ──────────────────────────────────────────────
+function renderAllTable(invoices) {
+  const tbody = document.getElementById('allBody');
+  const q = state.searchQuery.toLowerCase();
+  
+  let rows = invoices.filter(inv => {
+    return !q || [inv.doc_no, inv.invoice_no, inv.vendor, inv.gl_account, inv.category].join(' ').toLowerCase().includes(q);
+  });
+  
+  if (!rows.length) {
+    tbody.innerHTML = `<tr><td colspan="10"><div class="empty-state"><div class="empty-icon">🔍</div>No matching invoices found</div></td></tr>`;
+    return;
+  }
+  
+  tbody.innerHTML = rows.map((inv, i) => `
+    <tr class="clickable-row" onclick="openAllDrawer(${state.invoices.indexOf(inv)})">
+      <td style="color:var(--sap-text-muted)">${i+1}</td>
+      <td style="font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--sap-accent)">${inv.doc_no}</td>
+      <td>${inv.invoice_no}</td>
+      <td title="${inv.vendor}" style="font-weight:600">${inv.vendor.substring(0,30)}${inv.vendor.length>30?'…':''}</td>
+      <td style="font-weight:700">${fmt(inv.amount_inr)}</td>
+      <td style="font-family:'JetBrains Mono',monospace;color:var(--sap-text-muted)">${inv.gl_account}</td>
+      <td><span style="background:var(--sap-surface-2);padding:2px 6px;border-radius:4px;font-size:11px;border:1px solid var(--sap-border)">${inv.doc_type}</span></td>
+      <td style="color:var(--sap-text-muted)">${inv.posting_date}</td>
+      <td>${sapBadge(inv.sap_status)}</td>
+      <td style="font-size:11px;color:var(--sap-text-muted)">${(inv.category||'').replace(/_/g,' ')}</td>
+    </tr>`).join('');
+}
+
+// ── RUN SCORING ENGINE ─────────────────────────────────────────────────────
+async function runEngine(type) {
+  document.getElementById('engineDropdown').classList.remove('open');
+  const btn = document.getElementById('engineBtn');
+  btn.innerHTML = '<span class="spinner"></span> Running...';
+  btn.disabled = true;
+  try {
+    if (type === 'before' || type === 'both') {
+      const res = await fetch(`${API}/api/engine/before`, {method:'POST'});
+      const data = await res.json();
+      state.before = data.results || [];
+      renderBeforeTable(state.before);
+      document.getElementById('beforeCharts').style.display = '';
+      setTimeout(() => renderBeforeCharts(state.before), 60);
+      toast(`Before Payment Engine: ${data.high_count} HIGH, ${data.medium_count} MEDIUM, ${data.auto_blocked_count} Auto-Blocked`, 'success');
+    }
+    if (type === 'after' || type === 'both') {
+      const res = await fetch(`${API}/api/engine/after`, {method:'POST'});
+      const data = await res.json();
+      state.after = data.results || [];
+      renderAfterTable(state.after);
+      document.getElementById('afterCharts').style.display = '';
+      setTimeout(() => renderAfterCharts(state.after), 60);
+      toast(`After Payment Engine: ${data.high_count} HIGH, ${data.medium_count} MEDIUM, ${data.low_count} LOW`, 'success');
+    }
+    await refreshStats();
+    if (type === 'before') switchTab('before');
+    else if (type === 'after') switchTab('after');
+    else switchTab('before');
+  } catch(e) {
+    toast('Engine execution error: ' + e.message, 'error');
+  } finally {
+    btn.innerHTML = '⚙ Run Scoring Engine ▾';
+    btn.disabled = false;
+  }
+}
+
+// ── RENDER BEFORE PAYMENT TABLE ────────────────────────────────────────────
+function renderBeforeTable(results) {
+  const tbody = document.getElementById('beforeBody');
+  const q = state.searchQuery.toLowerCase();
+  const tier = state.selectedTier;
+
+  let rows = results.filter(r => {
+    const matchQ = !q || [r.doc_no, r.invoice_no, r.vendor, r.gl_account].join(' ').toLowerCase().includes(q);
+    const matchT = !tier || r.tier === tier;
+    return matchQ && matchT;
+  });
+
+  if (!rows.length) {
+    tbody.innerHTML = `<tr><td colspan="10"><div class="empty-state"><div class="empty-icon">🔍</div>No Before Payment items matching filter</div></td></tr>`;
+    return;
+  }
+
+  tbody.innerHTML = rows.map((r, i) => {
+    const bank = r.bank_guard_result || {};
+    const bankTxt = bank.risk_level === 'CLEAN' 
+      ? '<span style="color:var(--sap-positive);font-size:12px;">✅ Clean</span>' 
+      : `<span style="color:${bank.risk_level==='HIGH'?'var(--sap-negative)':'var(--sap-critical)'};font-weight:700;font-size:12px;">⚠️ ${bank.days_since_change}d ago</span>`;
+    const blockBadge = r.payment_block_applied 
+      ? `<span class="block-badge">🚫 BLOCKED</span>` 
+      : '<span style="color:var(--sap-positive);font-size:12px;">✅ Clear</span>';
+
+    return `<tr class="clickable-row" onclick="openBeforeDrawer(${results.indexOf(r)})" style="${r.tier==='HIGH'?'background:var(--sap-negative-bg)':''}">
+      <td style="color:var(--sap-text-muted)">${i+1}</td>
+      <td style="font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--sap-accent)">${r.doc_no}</td>
+      <td>${r.invoice_no}</td>
+      <td title="${r.vendor}" style="font-weight:600">${r.vendor.substring(0,28)}${r.vendor.length>28?'…':''}</td>
+      <td style="font-weight:700">${fmt(r.amount_inr)}</td>
+      <td>${ariBar(r.ari)}</td>
+      <td>${tierPill(r.tier)}</td>
+      <td>${bankTxt}</td>
+      <td>${blockBadge}</td>
+      <td style="color:var(--sap-text-muted);font-size:12px">${r.posting_date}</td>
+    </tr>`;
+  }).join('');
+}
+
+// ── RENDER AFTER PAYMENT TABLE ─────────────────────────────────────────────
+function renderAfterTable(results) {
+  const tbody = document.getElementById('afterBody');
+  const q = state.searchQuery.toLowerCase();
+  const tier = state.selectedTier;
+
+  let rows = results.filter(r => {
+    const matchQ = !q || [r.doc_no, r.invoice_no, r.vendor, r.gl_account].join(' ').toLowerCase().includes(q);
+    const matchT = !tier || r.tier === tier;
+    return matchQ && matchT;
+  });
+
+  if (!rows.length) {
+    tbody.innerHTML = `<tr><td colspan="11"><div class="empty-state"><div class="empty-icon">🔍</div>No After Payment items matching filter</div></td></tr>`;
+    return;
+  }
+
+  tbody.innerHTML = rows.map((r, i) => {
+    const recon = r.recon_result || {};
+    const tax = r.tax_result || {};
+    const grir = r.grir_result || {};
+
+    const reconTxt = recon.reconciliation_status === 'FULLY_MATCHED'
+      ? '<span style="color:var(--sap-positive);font-size:12px;">✅ Reconciled</span>'
+      : recon.reconciliation_status === 'UNAPPLIED_CREDIT'
+      ? '<span style="color:var(--sap-critical);font-weight:700;font-size:12px;">⚠️ Credit Note</span>'
+      : '<span style="color:var(--sap-negative);font-weight:700;font-size:12px;">❌ Mismatch</span>';
+
+    const taxTxt = tax.portal_status === 'FILED'
+      ? '<span style="color:var(--sap-positive);font-size:12px;">✅ Filed (GSTR-2B)</span>'
+      : tax.portal_status === 'MISMATCH'
+      ? '<span style="color:var(--sap-critical);font-weight:700;font-size:12px;">⚠️ Mismatch</span>'
+      : '<span style="color:var(--sap-negative);font-weight:700;font-size:12px;">🚫 Not Filed</span>';
+
+    const grirTxt = grir.variance_type === 'BALANCED'
+      ? '<span style="color:var(--sap-positive);font-size:12px;">✅ Balanced</span>'
+      : `<span style="color:var(--sap-critical);font-weight:600;font-size:12px;">⚠️ ${grir.variance_type}</span>`;
+
+    return `<tr class="clickable-row" onclick="openAfterDrawer(${results.indexOf(r)})" style="${r.tier==='HIGH'?'background:var(--sap-negative-bg)':''}">
+      <td style="color:var(--sap-text-muted)">${i+1}</td>
+      <td style="font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--sap-accent)">${r.doc_no}</td>
+      <td>${r.invoice_no}</td>
+      <td title="${r.vendor}" style="font-weight:600">${r.vendor.substring(0,28)}${r.vendor.length>28?'…':''}</td>
+      <td style="font-weight:700">${fmt(r.amount_inr)}</td>
+      <td>${ariBar(r.ari)}</td>
+      <td>${tierPill(r.tier)}</td>
+      <td>${reconTxt}</td>
+      <td>${taxTxt}</td>
+      <td>${grirTxt}</td>
+      <td style="color:var(--sap-text-muted);font-size:12px">${r.posting_date}</td>
+    </tr>`;
+  }).join('');
+}
+
+// ── CHART.JS CONFIGURATION ─────────────────────────────────────────────────
+function destroyChart(id) { 
+  if (state.charts[id]) { 
+    state.charts[id].destroy(); 
+    delete state.charts[id]; 
+  } 
+}
+
+const centerTextPlugin = {
+  id: 'centerText',
+  beforeDraw(chart) {
+    if (chart.config.type !== 'doughnut') return;
+    const { ctx, chartArea: { top, bottom, left, right } } = chart;
+    const total = chart.data.datasets[0].data.reduce((a, b) => a + b, 0);
+    const textColor = state.theme === 'dark' ? '#f5f6f8' : '#1d2d3e';
+    const subColor = state.theme === 'dark' ? '#9aa7b5' : '#596b7d';
+    
+    ctx.save();
+    ctx.font = 'bold 22px "72", "Inter", sans-serif';
+    ctx.fillStyle = textColor;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    const centerX = (left + right) / 2;
+    const centerY = (top + bottom) / 2 - 6;
+    ctx.fillText(total, centerX, centerY);
+    ctx.font = '700 10.5px "72", "Inter", sans-serif';
+    ctx.fillStyle = subColor;
+    ctx.fillText('INVOICES', centerX, centerY + 17);
+    ctx.restore();
+  }
+};
+
+function getChartColors() {
+  const isDark = state.theme === 'dark';
+  return {
+    high: isDark ? '#ff6a6a' : '#bb0000',
+    medium: isDark ? '#f5a623' : '#c76a00',
+    low: isDark ? '#46b86e' : '#107e3e',
+    grid: isDark ? '#28303d' : '#e2e8f0',
+    text: isDark ? '#9aa7b5' : '#596b7d',
+    cardBg: isDark ? '#1d232c' : '#ffffff'
+  };
+}
+
+function renderDonutChart(canvasId, high, medium, low) {
+  destroyChart(canvasId);
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const colors = getChartColors();
+  
+  state.charts[canvasId] = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: [`HIGH (${high})`, `MEDIUM (${medium})`, `LOW (${low})`],
+      datasets: [{
+        data: [high, medium, low],
+        backgroundColor: [colors.high, colors.medium, colors.low],
+        borderColor: colors.cardBg,
+        borderWidth: 3,
+        hoverOffset: 4
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: { color: colors.text, boxWidth: 12, padding: 12, font: { size: 11, weight: '600' } }
+        },
+        tooltip: {
+          callbacks: {
+            label: function(c) {
+              const total = c.dataset.data.reduce((a, b) => a + b, 0);
+              const val = c.raw || 0;
+              const pct = total ? ((val / total) * 100).toFixed(1) : 0;
+              return ` ${c.label}: ${val} (${pct}%)`;
+            }
+          }
+        }
+      },
+      cutout: '72%'
+    },
+    plugins: [centerTextPlugin]
+  });
+}
+
+function renderHistogramChart(canvasId, results) {
+  destroyChart(canvasId);
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const colors = getChartColors();
+  
+  const bands = [[0,25],[25,50],[50,70],[70,85],[85,100.1]];
+  const labels = ['0–25', '25–50', '50–70', '70–85', '85–100'];
+  const counts = bands.map(([lo, hi]) => results.filter(r => r.ari >= lo && r.ari < hi).length);
+  const barColors = [colors.low, colors.low, colors.medium, colors.high, colors.high];
+
+  state.charts[canvasId] = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        data: counts,
+        backgroundColor: barColors,
+        borderRadius: 5,
+        borderSkipped: false
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { grid: { color: colors.grid }, ticks: { color: colors.text, font: { size: 10 } } },
+        y: { grid: { color: colors.grid }, ticks: { color: colors.text, stepSize: 1 } }
+      }
+    }
+  });
+}
+
+function renderBeforeCharts(results) {
+  const h = results.filter(r => r.tier === 'HIGH').length;
+  const m = results.filter(r => r.tier === 'MEDIUM').length;
+  const l = results.filter(r => r.tier === 'LOW').length;
+  renderDonutChart('beforeDonut', h, m, l);
+  renderHistogramChart('beforeHist', results);
+}
+
+function renderAfterCharts(results) {
+  const h = results.filter(r => r.tier === 'HIGH').length;
+  const m = results.filter(r => r.tier === 'MEDIUM').length;
+  const l = results.filter(r => r.tier === 'LOW').length;
+  renderDonutChart('afterDonut', h, m, l);
+  renderHistogramChart('afterHist', results);
+}
+
+function renderAnalysis() {
+  const all = [...state.before, ...state.after];
+  if (!all.length) {
+    document.getElementById('analysisSummary').innerHTML = `<div class="empty-state" style="padding:20px;">Run scoring engine to generate analysis data</div>`;
+    document.getElementById('analysisStats').innerHTML = `<div class="empty-state" style="padding:20px;">No statistics available</div>`;
+    return;
+  }
+  
+  const h = all.filter(r => r.tier === 'HIGH').length;
+  const m = all.filter(r => r.tier === 'MEDIUM').length;
+  const l = all.filter(r => r.tier === 'LOW').length;
+  const colors = getChartColors();
+  
+  renderDonutChart('analysisDonut', h, m, l);
+
+  destroyChart('analysisBar');
+  const canvas = document.getElementById('analysisBar');
+  if (canvas) {
+    const ctx = canvas.getContext('2d');
+    const highVal = all.filter(r => r.tier === 'HIGH').reduce((s, r) => s + r.amount_inr, 0);
+    const medVal = all.filter(r => r.tier === 'MEDIUM').reduce((s, r) => s + r.amount_inr, 0);
+    const lowVal = all.filter(r => r.tier === 'LOW').reduce((s, r) => s + r.amount_inr, 0);
+
+    state.charts['analysisBar'] = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['HIGH Risk', 'MEDIUM Risk', 'LOW Risk'],
+        datasets: [{
+          data: [highVal, medVal, lowVal],
+          backgroundColor: [colors.high, colors.medium, colors.low],
+          borderRadius: 6
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: { callbacks: { label: c => ' Total Value: ' + fmt(c.raw) } }
+        },
+        scales: {
+          x: { ticks: { color: colors.text, font: { weight: '600' } }, grid: { color: colors.grid } },
+          y: { ticks: { color: colors.text, callback: v => '₹' + (v >= 10000000 ? (v/10000000).toFixed(1)+'Cr' : (v/100000).toFixed(0)+'L') }, grid: { color: colors.grid } }
+        }
+      }
+    });
+  }
+
+  document.getElementById('analysisSummary').innerHTML = `
+    <div class="stat-row"><span>Before Payment Processed</span><span style="font-weight:700">${state.before.length}</span></div>
+    <div class="stat-row"><span>After Payment Processed</span><span style="font-weight:700">${state.after.length}</span></div>
+    <div class="stat-row"><span>Before — HIGH Risk</span><span style="color:var(--sap-negative);font-weight:700">${state.before.filter(r=>r.tier==='HIGH').length}</span></div>
+    <div class="stat-row"><span>Before — MEDIUM Risk</span><span style="color:var(--sap-critical);font-weight:700">${state.before.filter(r=>r.tier==='MEDIUM').length}</span></div>
+    <div class="stat-row"><span>After — HIGH Risk</span><span style="color:var(--sap-negative);font-weight:700">${state.after.filter(r=>r.tier==='HIGH').length}</span></div>
+    <div class="stat-row"><span>After — MEDIUM Risk</span><span style="color:var(--sap-critical);font-weight:700">${state.after.filter(r=>r.tier==='MEDIUM').length}</span></div>
+  `;
+
+  const totalVal = all.reduce((s,r) => s + r.amount_inr, 0);
+  const avgARI = all.length ? (all.reduce((s,r) => s + r.ari, 0) / all.length).toFixed(1) : '—';
+  const blocked = state.before.filter(r => r.payment_block_applied).length;
+  
+  document.getElementById('analysisStats').innerHTML = `
+    <div class="stat-row"><span>Total Invoices Value</span><span style="font-weight:700">${fmt(totalVal)}</span></div>
+    <div class="stat-row"><span>Average ARI Score</span><span style="font-weight:700">${avgARI} / 100</span></div>
+    <div class="stat-row"><span>Auto-Blocked Payments</span><span style="color:var(--sap-negative);font-weight:700">${blocked}</span></div>
+    <div class="stat-row"><span>UTR Reconciliation Mismatches</span><span style="color:var(--sap-critical);font-weight:700">${state.after.filter(r=>r.utr_result?.match_status==='UNMATCHED').length}</span></div>
+    <div class="stat-row"><span>Inter-Company Out-of-Balance</span><span style="color:var(--sap-negative);font-weight:700">${state.after.filter(r=>!r.ic_balance_ok && r.is_intercompany).length}</span></div>
+    <div class="stat-row"><span>Reporting Period</span><span style="color:var(--sap-accent);font-weight:600">${state.period.replace(/_/g,' ').toUpperCase()}</span></div>
+  `;
+}
+
+// ── DETAIL DRAWERS ─────────────────────────────────────────────────────────
+function openAllDrawer(idx) {
+  const inv = state.invoices[idx];
+  if (!inv) return;
+  state.currentSelectedDoc = inv;
+  
+  document.getElementById('drawerTitle').textContent = `Document: ${inv.doc_no}`;
+  document.getElementById('drawerBody').innerHTML = `
+    <div class="drawer-meta">
+      <div class="meta-item"><div class="meta-label">Document No</div><div class="meta-value" style="font-family:'JetBrains Mono',monospace;color:var(--sap-accent)">${inv.doc_no}</div></div>
+      <div class="meta-item"><div class="meta-label">Invoice No</div><div class="meta-value">${inv.invoice_no}</div></div>
+      <div class="meta-item"><div class="meta-label">Vendor Name</div><div class="meta-value">${inv.vendor}</div></div>
+      <div class="meta-item"><div class="meta-label">Amount (INR)</div><div class="meta-value">${fmt(inv.amount_inr)}</div></div>
+      <div class="meta-item"><div class="meta-label">GL Account</div><div class="meta-value" style="font-family:'JetBrains Mono',monospace">${inv.gl_account}</div></div>
+      <div class="meta-item"><div class="meta-label">Doc Type</div><div class="meta-value">${inv.doc_type}</div></div>
+      <div class="meta-item"><div class="meta-label">SAP Status</div><div class="meta-value">${sapBadge(inv.sap_status)}</div></div>
+      <div class="meta-item"><div class="meta-label">Posting Date</div><div class="meta-value">${inv.posting_date}</div></div>
+    </div>
+    <div style="background:var(--sap-surface-2);border:1px solid var(--sap-border);border-radius:6px;padding:14px;text-align:center;color:var(--sap-text-muted);font-size:12px;line-height:1.5;">
+      💡 Run the <b>Before / After Payment Engine</b> to calculate the complete 3-step / 4-step anomaly risk scoring breakdown for this invoice.
+    </div>
+    <div class="drawer-actions">
+      <button class="sap-btn sap-btn-default sap-btn-sm" onclick="openSapModal('${inv.doc_no}')">🔗 Open in SAP FB03</button>
+    </div>`;
+  openDrawer();
+}
+
+function openBeforeDrawer(idx) {
+  const r = state.before[idx];
+  if (!r) return;
+  openResultDrawer(r, 'BEFORE');
+}
+
+function openAfterDrawer(idx) {
+  const r = state.after[idx];
+  if (!r) return;
+  openResultDrawer(r, 'AFTER');
+}
+
+function openResultDrawer(r, pipeline) {
+  state.currentSelectedDoc = r;
+  document.getElementById('drawerTitle').innerHTML = `${pipeline === 'BEFORE' ? '🛡️' : '🏦'} <b>${r.doc_no}</b> <span style="font-size:11.5px;color:var(--sap-text-muted);font-weight:normal">(${pipeline} Payment)</span>`;
+  
+  let overrideHtml = '';
+  if (r.hard_override || r.payment_block_applied) {
+    overrideHtml = `
+      <div class="override-banner-red">
+        <div class="icon">🚨</div>
+        <div>
+          <div class="title">HARD OVERRIDE TRIGGERED — PAYMENT BLOCKED</div>
+          <div class="detail">${r.override_reason || "SAP Payment Block 'A' placed on BSEG-ZLSPR to prevent automatic F110 payment execution."}</div>
+        </div>
+      </div>`;
+  }
+
+  const steps = (r.steps || []).map(s => {
+    const cls = s.raw_score > 70 ? 'high' : s.raw_score > 40 ? 'medium' : 'low';
+    const clr = s.raw_score > 70 ? 'var(--sap-negative)' : s.raw_score > 40 ? 'var(--sap-critical)' : 'var(--sap-positive)';
+    return `<div class="step-item ${cls}">
+      <div class="step-header">
+        <span class="step-name">Step ${s.step_no}: ${s.step_name}</span>
+        <span class="step-score" style="color:${clr}">${Number(s.raw_score).toFixed(0)} <span style="font-size:10px;color:var(--sap-text-muted)">/ 100</span></span>
+      </div>
+      <div class="step-detail">${s.detail}</div>
+      <div class="step-weight">Weight: ${(s.weight * 100).toFixed(0)}% · Weighted Contribution: +${Number(s.weighted_score).toFixed(1)}</div>
+    </div>`;
+  }).join('');
+
+  const alerts = (r.alerts || []).map(a => `<span class="alert-chip">⚠️ ${a}</span>`).join('');
+
+  document.getElementById('drawerBody').innerHTML = `
+    <div class="drawer-meta">
+      <div class="meta-item"><div class="meta-label">Doc Number</div><div class="meta-value" style="font-family:'JetBrains Mono',monospace;color:var(--sap-accent)">${r.doc_no}</div></div>
+      <div class="meta-item"><div class="meta-label">Invoice Amount</div><div class="meta-value">${fmt(r.amount_inr)}</div></div>
+      <div class="meta-item"><div class="meta-label">Vendor</div><div class="meta-value">${r.vendor}</div></div>
+      <div class="meta-item"><div class="meta-label">ARI Score</div><div class="meta-value" style="color:${ariColor(r.ari)};font-size:18px">${Number(r.ari).toFixed(1)} <span style="font-size:10.5px;color:var(--sap-text-muted)">/ 100</span></div></div>
+      <div class="meta-item"><div class="meta-label">Assigned Risk Tier</div><div class="meta-value">${tierPill(r.tier)}</div></div>
+      <div class="meta-item"><div class="meta-label">Audit Reference</div><div class="meta-value" style="font-family:'JetBrains Mono',monospace;font-size:11px">${r.audit_ref || 'BEF-'+r.doc_no}</div></div>
+    </div>
+    ${overrideHtml}
+    ${alerts ? `<div><div class="drawer-section-title">Triggered Alerts</div><div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:4px;">${alerts}</div></div>` : ''}
+    <div>
+      <div class="drawer-section-title">Step-by-Step Scoring Breakdown</div>
+      <div style="margin-top:6px;">${steps}</div>
+    </div>
+    ${r.tier !== 'LOW' ? `
+    <div>
+      <div class="drawer-section-title">Review Actions & Approvals</div>
+      <textarea class="note-area" id="reviewNote" placeholder="Add audit note or rationale (e.g. verified invoice with procurement team)..."></textarea>
+      <div class="drawer-actions">
+        <button class="sap-btn sap-btn-accept sap-btn-sm" onclick="doReview('${r.doc_no}','approve')">✅ Approve Invoice</button>
+        <button class="sap-btn sap-btn-reject sap-btn-sm" onclick="doReview('${r.doc_no}','reject')">❌ Confirm Block / Reject</button>
+        <button class="sap-btn sap-btn-default sap-btn-sm" onclick="openSapModal('${r.doc_no}')">🔗 Open in SAP FB03</button>
+      </div>
+    </div>` : `
+    <div class="drawer-actions">
+      <button class="sap-btn sap-btn-default sap-btn-sm" onclick="openSapModal('${r.doc_no}')">🔗 Open in SAP FB03</button>
+    </div>`}
+  `;
+  openDrawer();
+}
+
+function openDrawer() {
+  document.getElementById('drawer').classList.add('open');
+  document.getElementById('drawerOverlay').classList.add('open');
+}
+function closeDrawer() {
+  document.getElementById('drawer').classList.remove('open');
+  document.getElementById('drawerOverlay').classList.remove('open');
+}
+
+// ── SAP FB03 SIMULATION MODAL ──────────────────────────────────────────────
+function openSapModal(docNo) {
+  const doc = state.invoices.find(i => i.doc_no === docNo) || 
+              state.before.find(i => i.doc_no === docNo) || 
+              state.after.find(i => i.doc_no === docNo) || 
+              state.currentSelectedDoc || {};
+  
+  const content = document.getElementById('sapModalContent');
+  const isBlocked = doc.payment_block_applied || doc.tier === 'HIGH';
+
+  content.innerHTML = `
+    <div class="sap-gui-panel">
+      <div class="sap-gui-panel-title">Document Header (BKPF) — General Ledger Entry</div>
+      <div class="sap-grid-4">
+        <div><div class="sap-field-label">Document Number</div><div class="sap-field-val">${doc.doc_no || '1800000001'}</div></div>
+        <div><div class="sap-field-label">Company Code</div><div class="sap-field-val">1000 (IN01 Corp)</div></div>
+        <div><div class="sap-field-label">Fiscal Year / Period</div><div class="sap-field-val">2024 / 09</div></div>
+        <div><div class="sap-field-label">Document Type</div><div class="sap-field-val">${doc.doc_type || 'KR'} (Vendor Inv)</div></div>
+        <div><div class="sap-field-label">Posting Date</div><div class="sap-field-val">${doc.posting_date || '2024-09-24'}</div></div>
+        <div><div class="sap-field-label">Document Date</div><div class="sap-field-val">${doc.posting_date || '2024-09-24'}</div></div>
+        <div><div class="sap-field-label">Currency</div><div class="sap-field-val">INR</div></div>
+        <div><div class="sap-field-label">User ID</div><div class="sap-field-val">INT_PRITHVI</div></div>
+      </div>
+    </div>
+
+    <div class="sap-gui-panel">
+      <div class="sap-gui-panel-title">Document Control & Blocking Status</div>
+      <div style="display:flex;gap:16px;align-items:center;">
+        <div><span style="color:var(--sap-text-muted)">Status:</span> <span class="sap-status-badge sap-${doc.sap_status||'A'}">${doc.sap_status==='V'?'Parked (V)':doc.sap_status==='Z'?'Cleared (Z)':'Posted (A)'}</span></div>
+        <div><span style="color:var(--sap-text-muted)">Payment Block (ZLSPR):</span> <span style="font-weight:700;color:${isBlocked?'var(--sap-negative)':'var(--sap-positive)'}">${isBlocked ? "A (Locked for Payment)" : "None (Free for F110)"}</span></div>
+        <div><span style="color:var(--sap-text-muted)">Invoice Reference:</span> <span style="font-family:'JetBrains Mono',monospace;font-weight:600">${doc.invoice_no || 'N/A'}</span></div>
+      </div>
+    </div>
+
+    <div class="sap-gui-panel">
+      <div class="sap-gui-panel-title">Line Items (BSEG) — Accounting Entries</div>
+      <table class="sap-gui-table">
+        <thead>
+          <tr>
+            <th>Item</th><th>PK</th><th>Account</th><th>Account Description</th><th>Amount (INR)</th><th>Tx</th><th>Cost Ctr</th><th>Payment Block</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td><td>31</td><td>${doc.vendor_code || 'V10001'}</td><td>${doc.vendor || 'Vendor Account'}</td><td style="color:var(--sap-negative);font-weight:bold;">-${fmt(doc.amount_inr||0)}</td><td>V0</td><td>CC1000</td><td style="color:${isBlocked?'var(--sap-negative)':'var(--sap-positive)'};font-weight:bold">${isBlocked ? 'A' : '—'}</td>
+          </tr>
+          <tr>
+            <td>002</td><td>40</td><td>${doc.gl_account || '401000'}</td><td>Operating / Inventory Expense</td><td style="color:var(--sap-positive);font-weight:bold;">+${fmt(doc.amount_inr||0)}</td><td>V0</td><td>CC1000</td><td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  `;
+
+  document.getElementById('sapModalOverlay').classList.add('open');
+}
+
+function closeSapModal(e) {
+  if (e.target.id === 'sapModalOverlay') closeSapModalDirect();
+}
+function closeSapModalDirect() {
+  document.getElementById('sapModalOverlay').classList.remove('open');
+}
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closeDrawer();
+    closeSapModalDirect();
+  }
+});
+
+// ── REVIEW QUEUE ───────────────────────────────────────────────────────────
+async function loadReviewQueue() {
+  try {
+    const res = await fetch(`${API}/api/review/queue`);
+    const data = await res.json();
+    const el = document.getElementById('reviewQueue');
+    const badge = document.getElementById('reviewBadge');
+    
+    const pending = data.pending_review || 0;
+    if (pending > 0) { 
+      badge.textContent = pending; 
+      badge.style.display = ''; 
+    } else { 
+      badge.style.display = 'none'; 
+    }
+
+    if (!data.queue?.length) {
+      el.innerHTML = `<div class="empty-state" style="padding:40px;"><div class="empty-icon">✅</div>All flagged items have been reviewed and resolved</div>`;
+      return;
+    }
+
+    el.innerHTML = data.queue.map(r => {
+      const action = r.review_action || {};
+      const actionStatus = action.action 
+        ? `<span class="sap-status-pill ${action.action==='approve'?'status-LOW':'status-HIGH'}">${action.action==='approve'?'APPROVED':'REJECTED'}</span>` 
+        : '';
+      const pipelineLabel = r.pipeline === 'BEFORE' ? '🛡️ Before Payment' : '🏦 After Payment';
+      
+      return `<div class="queue-item" style="${action.action ? 'opacity:0.65;border-color:'+(action.action==='approve'?'var(--sap-positive)':'var(--sap-negative)') : ''}">
+        <div class="queue-item-left">
+          <div style="font-size:11.5px;color:var(--sap-text-muted);margin-bottom:3px;display:flex;align-items:center;gap:8px;">
+            <span>${pipelineLabel}</span> · <span>${r.posting_date}</span> · <span style="font-family:'JetBrains Mono',monospace;color:var(--sap-accent);font-weight:700;">${r.doc_no}</span>
+          </div>
+          <div style="font-weight:700;font-size:13.5px;margin-bottom:2px;">${r.vendor}</div>
+          <div style="font-size:12px;color:var(--sap-text-muted);">Invoice: <b>${r.invoice_no}</b> · Amount: <b style="color:var(--sap-text)">${fmt(r.amount_inr)}</b></div>
+          ${action.note ? `<div style="font-size:11px;color:var(--sap-accent);margin-top:5px;background:var(--sap-surface-2);padding:4px 8px;border-radius:4px;border:1px solid var(--sap-border);">Audit Note: ${action.note} (${new Date(action.timestamp).toLocaleTimeString()})</div>` : ''}
+        </div>
+        <div class="queue-item-right">
+          ${ariBar(r.ari)} ${tierPill(r.tier)} ${actionStatus}
+          ${!action.action ? `
+            <button class="sap-btn sap-btn-accept sap-btn-sm" onclick="doReview('${r.doc_no}','approve')">✅ Approve</button>
+            <button class="sap-btn sap-btn-reject sap-btn-sm" onclick="doReview('${r.doc_no}','reject')">❌ Reject</button>
+          ` : ''}
+          <button class="sap-btn sap-btn-default sap-btn-sm" onclick="openSapModal('${r.doc_no}')">🔗 SAP</button>
+        </div>
+      </div>`;
+    }).join('');
+  } catch(e) { console.error('Review queue error:', e); }
+}
+
+async function doReview(docNo, action) {
+  const note = document.getElementById('reviewNote')?.value || (action === 'approve' ? 'Approved during review pass' : 'Confirmed risk - rejected');
+  try {
+    const res = await fetch(`${API}/api/review/${action}`, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ doc_no: docNo, action, note })
+    });
+    const data = await res.json();
+    toast(data.message, action === 'approve' ? 'success' : 'info');
+    closeDrawer();
+    await refreshStats();
+    if (state.activeTab === 'review') loadReviewQueue();
+  } catch(e) { 
+    toast('Action failed: ' + e.message, 'error'); 
+  }
+}
+
+// ── HISTORY ────────────────────────────────────────────────────────────────
+async function loadHistory() {
+  try {
+    const res = await fetch(`${API}/api/history`);
+    const data = await res.json();
+    const el = document.getElementById('historyList');
+    
+    if (!data.history?.length) {
+      el.innerHTML = `<div class="empty-state" style="padding:40px;"><div class="empty-icon">📁</div>No engine runs recorded yet</div>`;
+      return;
+    }
+
+    el.innerHTML = data.history.map(h => `
+      <div class="history-item">
+        <div>
+          <div style="font-weight:700;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--sap-accent);">${h.run_id}</div>
+          <div style="font-size:11.5px;color:var(--sap-text-muted);margin-top:2px;">${new Date(h.timestamp).toLocaleString('en-IN')} · Pipeline: <b>${h.pipeline}</b></div>
+          ${h.note ? `<div style="font-size:11px;color:var(--sap-critical);margin-top:2px;">${h.note}</div>` : ''}
+        </div>
+        <div style="display:flex;gap:14px;align-items:center;font-size:12.5px;">
+          <span>Total: <strong>${h.total}</strong></span>
+          <span style="color:var(--sap-negative)">HIGH: <strong>${h.high}</strong></span>
+          <span style="color:var(--sap-critical)">MED: <strong>${h.medium}</strong></span>
+          <span style="color:var(--sap-positive)">LOW: <strong>${h.low}</strong></span>
+          <span style="color:var(--sap-negative)">Blocked: <strong>${h.blocked || 0}</strong></span>
+        </div>
+        <div style="display:flex;gap:6px;">
+          <button class="sap-btn sap-btn-default sap-btn-sm" onclick="downloadReport('excel')">⬇ Excel</button>
+          <button class="sap-btn sap-btn-default sap-btn-sm" onclick="downloadReport('pdf')">⬇ PDF</button>
+        </div>
+      </div>`).join('');
+  } catch(e) { console.error('History load error:', e); }
+}
+
+// ── REFRESH KPI STATS ──────────────────────────────────────────────────────
+async function refreshStats() {
+  try {
+    const res = await fetch(`${API}/api/stats`);
+    const d = await res.json();
+    
+    document.getElementById('kpiTotal').textContent = d.total_pulled || '—';
+    document.getElementById('kpiHigh').textContent = d.engine_run ? d.high_count : '—';
+    document.getElementById('kpiMedium').textContent = d.engine_run ? d.medium_count : '—';
+    document.getElementById('kpiLow').textContent = d.engine_run ? d.low_count : '—';
+    document.getElementById('kpiBlocked').textContent = d.engine_run ? d.auto_blocked : '—';
+    document.getElementById('kpiPending').textContent = d.engine_run ? d.pending_review : '—';
+    
+    const badge = document.getElementById('reviewBadge');
+    if (d.pending_review > 0) {
+      badge.textContent = d.pending_review;
+      badge.style.display = '';
+    } else {
+      badge.style.display = 'none';
+    }
+  } catch(e) {}
+}
+
+// ── SEARCH & FILTER HANDLERS ───────────────────────────────────────────────
+function handleSearch(q) {
+  state.searchQuery = q || '';
+  if (state.activeTab === 'all') renderAllTable(state.invoices);
+  if (state.activeTab === 'before') renderBeforeTable(state.before);
+  if (state.activeTab === 'after') renderAfterTable(state.after);
+}
+
+function handleTierFilter(tier) {
+  state.selectedTier = tier || '';
+  if (state.activeTab === 'before') renderBeforeTable(state.before);
+  if (state.activeTab === 'after') renderAfterTable(state.after);
+}
+
+// ── PERIOD SELECTOR ────────────────────────────────────────────────────────
+function setPeriod(p) {
+  state.period = p;
+  document.getElementById('periodDropdown').classList.remove('open');
+  const labels = { this_month: 'This Month', last_3m: 'Last 3 Months', last_6m: 'Last 6 Months' };
+  document.getElementById('periodBtnLabel').textContent = `📅 Period: ${labels[p]||p} ▾`;
+  toast(`Reporting period set to: ${labels[p]||p}`, 'info');
+  if (state.activeTab === 'analysis') renderAnalysis();
+}
+
+// ── EXPORT DOWNLOAD (EXCEL / PDF) ──────────────────────────────────────────
+async function downloadReport(format) {
+  toast(`Generating ${format.toUpperCase()} report (${state.period.replace(/_/g,' ')})...`, 'info');
+  try {
+    const res = await fetch(`${API}/api/report/download?format=${format}&period=${state.period}`);
+    if (!res.ok) throw new Error(await res.text());
+    const blob = await res.blob();
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    const ext = format === 'pdf' ? 'pdf' : 'xlsx';
+    a.download = `GL_Monitor_Report_${state.period}_${new Date().toISOString().slice(0,10)}.${ext}`;
+    a.click();
+    URL.revokeObjectURL(url);
+    toast(`${format.toUpperCase()} report downloaded successfully!`, 'success');
+  } catch(e) {
+    toast('Download failed: ' + e.message, 'error');
+  }
+}
+
+// ── INITIALIZATION ─────────────────────────────────────────────────────────
+applyTheme(state.theme);
+refreshStats();
+</script>
+</body>
+</html>

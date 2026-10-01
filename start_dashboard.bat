@@ -1,10 +1,14 @@
 @echo off
-title GL Anomaly Detection Dashboard Server
+title SAP Vendor Intelligence & AP Risk Agent (VIRA)
 echo =======================================================
-echo   GL Anomaly Detection Agent - Local Dashboard Server
+echo   SAP Vendor Intelligence & AP Risk Agent (VIRA)
 echo   URL: http://localhost:8000
 echo =======================================================
 echo.
-cd /d "c:\Users\arati\Downloads\uc14_agent 1"
-uc14_agent\.venv\Scripts\python.exe run.py --ui
+cd /d "%~dp0"
+if exist ".venv\Scripts\python.exe" (
+    .venv\Scripts\python.exe run.py --ui
+) else (
+    python run.py --ui
+)
 pause

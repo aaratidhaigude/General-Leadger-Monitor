@@ -1,0 +1,16 @@
+================================================================================
+                    SAP S/4HANA ENTERPRISE SYSTEM - MIGO
+                    GOODS RECEIPT DISPLAY (MKPF / MSEG)
+================================================================================
+Material Document No: 5000003001             Document Date : 18.01.2026
+Movement Type       : 101 (GR for PO)         Posting Date  : 18.01.2026
+PO Reference        : 4500002001              Vendor Code   : 10002481 (TCS Ltd)
+Plant               : 1001 (Mumbai Plant)     Storage Loc   : 0001 (Main Warehouse)
+Delivery Note       : DEL-2026-9901           Header Text   : IT Service Deliverable Acceptance
+
+ITEM MOVEMENTS (MSEG)
+Item | Material No | Description                  | Received Qty | Unit | Amount (INR) | Movement Status
+-----|-------------|------------------------------|--------------|------|--------------|----------------
+10   | MAT-IT-001  | IT Engineering & Consulting  | 10           | HRS  | ₹85,000.00   | Posted / OK
+20   | MAT-IT-002  | QA & Software Testing        | 5            | HRS  | ₹32,500.00   | Posted / OK
+================================================================================
